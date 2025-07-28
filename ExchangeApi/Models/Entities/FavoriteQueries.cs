@@ -9,12 +9,15 @@ namespace ExchangeApi.Models.Entities
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int Id { get; set; }
         [Required]
-        public string Base {  get; set; }
+        [StringLength(3)]
+        public required string Base {  get; set; }
         [Required]
-        public string Target { get; set; }
+        [StringLength(3)]
+        public required string Target { get; set; }
 
         [Required]
-        public string Name { get; set; }
+        [StringLength(50)]
+        public required string Name { get; set; }
 
         [Required]
         [Column(TypeName = "decimal(18,6)")]

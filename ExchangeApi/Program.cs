@@ -1,5 +1,6 @@
 using ExchangeApi.Data;
 using ExchangeApi.Services;
+using ExchangeApi.Services.Interfaces;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.EntityFrameworkCore;
 
@@ -14,7 +15,10 @@ options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnectio
 builder.Services.AddControllers();
 builder.Services.AddSwaggerGen();
 builder.Services.AddEndpointsApiExplorer();
-builder.Services.AddHttpClient<ExchangeService>();
+
+builder.Services.AddHttpClient<IExchangeService,ExchangeService>();
+builder.Services.AddScoped<IExchangeService, ExchangeService>();
+
 
 
 

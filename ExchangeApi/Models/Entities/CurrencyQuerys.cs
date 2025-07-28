@@ -11,8 +11,10 @@ namespace ExchangeApi.Models.Entities
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int Id { get; set; }
         [Required]
+        [StringLength(3)]
         public string Base { get; set; }
         [Required]
+        [StringLength(3)]
         public string Target { get; set; }
 
        public ICollection<ExchangeResult> Results { get; set; } = new List<ExchangeResult>();

@@ -1,6 +1,6 @@
 ﻿using ExchangeApi.Data;
 using ExchangeApi.Models.Entities;
-using ExchangeApi.Services;
+using ExchangeApi.Services.Interfaces;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
@@ -15,13 +15,15 @@ namespace ExchangeApi.Controllers
     public class ExchangeController : ControllerBase
     {
         private readonly DbConnect dbconnect;
-        private readonly ExchangeService service;
+        private readonly IExchangeService exchangeservice;
+        private readonly ILogger<ExchangeController> logger;
 
 
-        public ExchangeController(DbConnect dbconnect, ExchangeService service)
+        public ExchangeController(DbConnect dbconnect, IExchangeService exchangeservice, ILogger<ExchangeController> logger)
         {
             this.dbconnect = dbconnect;
-            this.service = service;
+            this.exchangeservice = exchangeservice;
+            this.logger = logger;
         }
 
 
@@ -30,150 +32,117 @@ namespace ExchangeApi.Controllers
         {
             BaseCurrency = BaseCurrency.ToUpper();
             TargetCurrency = TargetCurrency.ToUpper();
+
+            //if (BaseCurrency == null || TargetCurrency == null)
+            //{
+            //    logger.LogInformation("Empty currency area in exchange-rate method");
+            //    return BadRequest("Currency fields can not be empty");
+            //}
+            if (!ModelState.IsValid)
+            {
+                logger.LogError("Currency length is invalid for BaseCurrency:" + BaseCurrency + ", TargetCurrency:" + TargetCurrency);
+                return BadRequest(ModelState);
+            }
             try
             {
-                var result = await service.GetExchangeResultAsync(BaseCurrency, TargetCurrency);
-
-                if (result == null) // if cant get from API
+                var result = await exchangeservice.SaveExchanges(BaseCurrency, TargetCurrency);
+                if (result == null)
                 {
+                    logger.LogError("Exchange rates not found");
                     return NotFound();
                 }
-
-                var query = await dbconnect.CurrencyQuery.FirstOrDefaultAsync(q => q.Base == BaseCurrency && q.Target == TargetCurrency); //check is there  a same base and target
-
-                if (query == null) //if there is not
-
+                else
                 {
-                    query = new CurrencyQuery
-                    {
-                        Base = BaseCurrency,
-                        Target = TargetCurrency
-                    };
-                    dbconnect.CurrencyQuery.Add(query);
-                    await dbconnect.SaveChangesAsync();
-
-
-                    var exchangeResult = new ExchangeResult 
-                    {
-
-                        Rate = result.Rate,
-                        TimeStamp = DateTime.UtcNow,
-                        CurrencyQueryId = query.Id
-
-                    };
-                    dbconnect.ExchangeResult.Add(exchangeResult);
-                    await dbconnect.SaveChangesAsync();
-                    return Ok(exchangeResult);
+                    return Ok(result);
                 }
-                else //if the query exist already
-                {
-
-                    var exchangeResult = new ExchangeResult  
-                    {
-
-                        Rate = result.Rate,
-                        TimeStamp = DateTime.UtcNow,
-                        CurrencyQueryId = query.Id
-
-                    };
-                    dbconnect.ExchangeResult.Add(exchangeResult);
-                    await dbconnect.SaveChangesAsync();
-                    return Ok(exchangeResult);
-                }
-                ;
-
             }
-
-            catch (Exception)
+            catch (Exception ex)
             {
-                return NotFound("Exchange rate not found");
 
+                logger.LogError(ex, "Error getting currencies  for {BaseCurrency} to {TargetCurrency} - {Message}", BaseCurrency, TargetCurrency, ex.Message);
+                return StatusCode(500, $"Internal server error: {ex.Message}");
             }
-
-
         }
+
+
+
         [HttpPost("queries")]
         public async Task<IActionResult> FavUsed(string BaseCurrency, string TargetCurrency, string Name)
         {
             BaseCurrency = BaseCurrency.ToUpper();
             TargetCurrency = TargetCurrency.ToUpper();
             Name = Name.ToUpper();
+
+            if (BaseCurrency == null || TargetCurrency == null)
+            {
+                logger.LogInformation("Empty currency area in exchange-rate method");
+                return BadRequest("Currency fields can not be empty");
+            }
+            if (!ModelState.IsValid)
+            {
+                logger.LogError("Currency length is invalid for BaseCurrency:" + BaseCurrency + ", TargetCurrency:" + TargetCurrency);
+                return BadRequest(ModelState);
+            }
             try
             {
-                var result = await service.GetExchangeResultAsync(BaseCurrency, TargetCurrency);
-
-                if (result == null) 
+                var result = await exchangeservice.AddFavoriteQueries(BaseCurrency, TargetCurrency, Name);
+                if (result == null)
                 {
+                    logger.LogError("Exchange rates not found");
                     return NotFound();
                 }
-
-                var existingFav = await dbconnect.FavoriteQueries.FirstOrDefaultAsync(q => q.Base == BaseCurrency && q.Target == TargetCurrency && q.Name == Name);
-
-                if (existingFav != null)  //if there is an existing fav it update the rate
+                else
                 {
-                    existingFav.Rate = result.Rate;
-                    dbconnect.FavoriteQueries.Update(existingFav);
-                    await dbconnect.SaveChangesAsync();
-
-
+                    return Ok(result);
                 }
-                if (existingFav == null) 
-                {
-                    var newFav = new FavoriteQueries
-                    {
-                        Base = BaseCurrency,
-                        Target = TargetCurrency,
-                        Name = Name,
-                        Rate = result.Rate
-
-                    };
-                    dbconnect.FavoriteQueries.Add(newFav);
-                    await dbconnect.SaveChangesAsync();
-
-                    return Ok(newFav);
-                }
-                return null;
             }
             catch (Exception ex)
             {
+
+                logger.LogError(ex, "Error getting currencies  for {BaseCurrency} to {TargetCurrency} with {Name} - {Message}", BaseCurrency, TargetCurrency, ex.Message);
                 return StatusCode(500, $"Internal server error: {ex.Message}");
             }
         }
+
+
         [HttpGet("queries")]
-        public async Task<IActionResult> QueriesGet()
+        public async Task<IActionResult> QueriesGet(string name) //ListofFavQueries  by name
         {
             try
             {
-                var querylist = await dbconnect.FavoriteQueries.OrderBy(q => q.Id).ToListAsync();  //list the queries order by id 
-                return Ok(querylist);
+                name = name.ToUpper();
+                var list = await exchangeservice.ListOfFavQueries(name);
+                if (list == null || list.Count == 0)
+                {
+                    logger.LogWarning("No fav queries found for that name");
+                    return NotFound("No favorite queries found");
+                }
+                return Ok(list);
+
             }
+
             catch (Exception ex)
             {
 
+                logger.LogError(ex, message: "Error getting queries  for  {Name} - {Message}", name);
                 return StatusCode(500, $"Internal server error: {ex.Message}");
             }
-
         }
+           
 
 
         [HttpGet("results")]
-        public async Task<IActionResult> ResultsGet(int Id)
+        public async Task<IActionResult> ResultsGet(int Id)  
         {
-            try
+            var resultlist = await exchangeservice.ResultsOrderByTime(Id);
+            if (!ModelState.IsValid)
             {
-                var result_id = await dbconnect.ExchangeResult.Where(r => r.CurrencyQueryId == Id)  //if this Id exist in currencyquery , it order by time 
-               .OrderByDescending(r => r.TimeStamp)
-               .ToListAsync();
-                if (!result_id.Any())
-                    return NotFound("No results found for this currency pair.");
-
-                return Ok(result_id);
+                return BadRequest(ModelState);
             }
-            catch (Exception ex)
-            {
+            return Ok(resultlist);
 
-                return StatusCode(500, $"Internal server error: {ex.Message}");
-            }
+            
+           
         }
 
         [HttpDelete("remove_favorite")]
@@ -181,25 +150,20 @@ namespace ExchangeApi.Controllers
         {
             try
             {
-                var fav_id = await dbconnect.FavoriteQueries.FirstOrDefaultAsync(f => f.Id == Id);
-                if (fav_id == null)
+                var deleteid = await exchangeservice.RemoveFromFavList(Id);
+                if (!ModelState.IsValid)
                 {
-                    return NotFound();
+                    return BadRequest(ModelState);
                 }
-                else
-                {
-                    dbconnect.FavoriteQueries.Remove(fav_id);
-                    await dbconnect.SaveChangesAsync();
-
-                    return Ok("Favorite currency pair was deleted");
-                }
-
+                return Ok("Favorite is delete");
             }
             catch (Exception ex)
             {
-
-                return StatusCode(500, $"Internal server error: {ex.Message}");
+                logger.LogError(ex, "Unexpected error removing favorite with Id {Id}", Id);
+                return StatusCode(500, "Internal server error");
             }
+           
         }
+
     }
 }
