@@ -8,7 +8,7 @@ namespace ExchangeApi.Services.Interfaces
         Task<ExchangeResult?> SaveExchanges(string BaseCurrency, string TargetCurrency);
         Task<FavoriteQueries?> AddFavoriteQueries(string BaseCurrency, string TargetCurrency, string Name);
         Task<List<FavoriteQueries>> ListOfFavQueries(string name);
-        Task<List<ExchangeResult>> ResultsOrderByTime(int Id);
+        Task<List<ExchangeResult>?> ResultsOrderByTime(int Id);
         Task <FavoriteQueries?> RemoveFromFavList(int Id);
 
     }

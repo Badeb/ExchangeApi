@@ -1,6 +1,9 @@
 ﻿using ExchangeApi.Data;
 using ExchangeApi.Models.Entities;
+using ExchangeApi.Services;
 using ExchangeApi.Services.Interfaces;
+using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
@@ -12,20 +15,26 @@ namespace ExchangeApi.Controllers
 
     [ApiController]
     [Route("api/")]
+    [Authorize]
+   
     public class ExchangeController : ControllerBase
     {
-        private readonly DbConnect dbconnect;
+
         private readonly IExchangeService exchangeservice;
         private readonly ILogger<ExchangeController> logger;
+        private readonly IJwtTokenService jwtTokenService;
 
 
-        public ExchangeController(DbConnect dbconnect, IExchangeService exchangeservice, ILogger<ExchangeController> logger)
+        public ExchangeController(IExchangeService exchangeservice, ILogger<ExchangeController> logger , IJwtTokenService jwtTokenService)
         {
-            this.dbconnect = dbconnect;
+
             this.exchangeservice = exchangeservice;
             this.logger = logger;
-        }
+            this.jwtTokenService = jwtTokenService;
 
+        }
+        
+        
 
         [HttpGet("exchange-rate")]
         public async Task<IActionResult> GetExchangeRate(string BaseCurrency, string TargetCurrency)
@@ -33,15 +42,11 @@ namespace ExchangeApi.Controllers
             BaseCurrency = BaseCurrency.ToUpper();
             TargetCurrency = TargetCurrency.ToUpper();
 
-            //if (BaseCurrency == null || TargetCurrency == null)
-            //{
-            //    logger.LogInformation("Empty currency area in exchange-rate method");
-            //    return BadRequest("Currency fields can not be empty");
-            //}
+      
             if (!ModelState.IsValid)
             {
                 logger.LogError("Currency length is invalid for BaseCurrency:" + BaseCurrency + ", TargetCurrency:" + TargetCurrency);
-                return BadRequest(ModelState);
+               // return BadRequest(ModelState);
             }
             try
             {
@@ -49,7 +54,7 @@ namespace ExchangeApi.Controllers
                 if (result == null)
                 {
                     logger.LogError("Exchange rates not found");
-                    return NotFound();
+                    return NotFound("Exchange rates not found");
                 }
                 else
                 {
@@ -66,18 +71,21 @@ namespace ExchangeApi.Controllers
 
 
 
-        [HttpPost("queries")]
-        public async Task<IActionResult> FavUsed(string BaseCurrency, string TargetCurrency, string Name)
+        [HttpPost("addfav-queries")]
+        public async Task<IActionResult> FavUsed(string BaseCurrency, string TargetCurrency)
         {
             BaseCurrency = BaseCurrency.ToUpper();
             TargetCurrency = TargetCurrency.ToUpper();
-            Name = Name.ToUpper();
+            var token = Request.Headers["Authorization"].ToString().Replace("Bearer ", "");
+            var userInfo = jwtTokenService.GetUserInfoFromToken(token);
+            var name = userInfo.name.ToUpper();
 
-            if (BaseCurrency == null || TargetCurrency == null)
+            if (userInfo == null)
             {
-                logger.LogInformation("Empty currency area in exchange-rate method");
-                return BadRequest("Currency fields can not be empty");
+                return NotFound("Name does not take ");
             }
+
+
             if (!ModelState.IsValid)
             {
                 logger.LogError("Currency length is invalid for BaseCurrency:" + BaseCurrency + ", TargetCurrency:" + TargetCurrency);
@@ -85,11 +93,12 @@ namespace ExchangeApi.Controllers
             }
             try
             {
-                var result = await exchangeservice.AddFavoriteQueries(BaseCurrency, TargetCurrency, Name);
+               
+                var result = await exchangeservice.AddFavoriteQueries(BaseCurrency, TargetCurrency, name);
                 if (result == null)
                 {
                     logger.LogError("Exchange rates not found");
-                    return NotFound();
+                    return NotFound("Exchange rates not found");
                 }
                 else
                 {
@@ -99,18 +108,22 @@ namespace ExchangeApi.Controllers
             catch (Exception ex)
             {
 
-                logger.LogError(ex, "Error getting currencies  for {BaseCurrency} to {TargetCurrency} with {Name} - {Message}", BaseCurrency, TargetCurrency, ex.Message);
+                logger.LogError(ex, "Error getting currencies  for {BaseCurrency} to {TargetCurrency} with {Name} - {Message}", BaseCurrency, TargetCurrency, name, ex.Message);
                 return StatusCode(500, $"Internal server error: {ex.Message}");
             }
         }
 
 
-        [HttpGet("queries")]
-        public async Task<IActionResult> QueriesGet(string name) //ListofFavQueries  by name
+        [HttpGet("fav-query")]
+        public async Task<IActionResult> QueriesGet() //ListofFavQueries  by name
         {
+            var token = Request.Headers["Authorization"].ToString().Replace("Bearer ", "");
+            var userInfo = jwtTokenService.GetUserInfoFromToken(token);
+            var name = userInfo.name.ToUpper();
+
             try
             {
-                name = name.ToUpper();
+               
                 var list = await exchangeservice.ListOfFavQueries(name);
                 if (list == null || list.Count == 0)
                 {
@@ -118,21 +131,19 @@ namespace ExchangeApi.Controllers
                     return NotFound("No favorite queries found");
                 }
                 return Ok(list);
-
             }
 
             catch (Exception ex)
             {
-
-                logger.LogError(ex, message: "Error getting queries  for  {Name} - {Message}", name);
+                logger.LogError(ex, message: "Error getting queries  for  {Name} - {Message}", name, ex.Message);
                 return StatusCode(500, $"Internal server error: {ex.Message}");
             }
         }
-           
 
 
-        [HttpGet("results")]
-        public async Task<IActionResult> ResultsGet(int Id)  
+
+        [HttpGet("currency-pair-results")]
+        public async Task<IActionResult> ResultsGet(int Id)
         {
             var resultlist = await exchangeservice.ResultsOrderByTime(Id);
             if (!ModelState.IsValid)
@@ -141,8 +152,8 @@ namespace ExchangeApi.Controllers
             }
             return Ok(resultlist);
 
-            
-           
+
+
         }
 
         [HttpDelete("remove_favorite")]
@@ -162,8 +173,7 @@ namespace ExchangeApi.Controllers
                 logger.LogError(ex, "Unexpected error removing favorite with Id {Id}", Id);
                 return StatusCode(500, "Internal server error");
             }
-           
-        }
 
+        }
     }
 }

@@ -1,13 +1,15 @@
-﻿using ExchangeApi.Controllers;
+﻿using Azure.Core;
+using ExchangeApi.Controllers;
 using ExchangeApi.Data;
 using ExchangeApi.DTO;
 using ExchangeApi.Models.Entities;
+using ExchangeApi.Services.Interfaces;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
 using System.Net.Http.Json;
-using ExchangeApi.Services.Interfaces;
-using Microsoft.EntityFrameworkCore;
-using Microsoft.AspNetCore.Http.HttpResults;
+
+
 
 namespace ExchangeApi.Services
 {
@@ -27,7 +29,7 @@ namespace ExchangeApi.Services
             this.logger = logger;
 
         }
-
+      
 
         public async Task<ExchangeResult?> GetExchangeResultAsync(string fromCurrency, string toCurrency)
         {
@@ -104,8 +106,9 @@ namespace ExchangeApi.Services
 
             }
         }
-        public async Task<FavoriteQueries?> AddFavoriteQueries(String BaseCurrency, String TargetCurrency, String Name)
+        public async Task<FavoriteQueries?> AddFavoriteQueries(String BaseCurrency, String TargetCurrency,String Name)
         {
+            
 
             try
             {
@@ -159,7 +162,7 @@ namespace ExchangeApi.Services
                 if (string.IsNullOrWhiteSpace(name))
                 {
                     logger.LogWarning("Name parameter is empty");
-                    throw new KeyNotFoundException($"Name can not be empty");
+                    return null;
                 }
                 name = name.ToUpper();
                 var querylist = await dbconnect.FavoriteQueries.Where(q => q.Name == name).OrderBy(q => q.Id).ToListAsync(); //list the queries order by id 
@@ -174,7 +177,7 @@ namespace ExchangeApi.Services
             }
 
         }
-        public async Task<List<ExchangeResult>> ResultsOrderByTime(int Id)  //list the id of currency query and all rates of this
+        public async Task<List<ExchangeResult>?> ResultsOrderByTime(int Id)  //list the id of currency query and all rates of this
         {
           // List<ExchangeResult> results = new List<ExchangeResult>();
             try
@@ -187,7 +190,7 @@ namespace ExchangeApi.Services
                 if (!result_id.Any())
                 {
                     logger.LogWarning("No results found for CurrencyQueryId: {Id}", Id);
-                    throw new KeyNotFoundException($"No results found for CurrencyQueryId: {result_id}");
+                    return null;
                 }
 
                 logger.LogInformation("Retrieved exchange results for CurrencyQueryId: {Id}", Id);
@@ -206,7 +209,7 @@ namespace ExchangeApi.Services
                 if (fav_id == null)
                 {
                     logger.LogWarning("Favorite currency pair with Id {Id} not found", Id);
-                    throw new KeyNotFoundException($"No results found for ID: {Id}");
+                    return null;
                 }
                 else
                 {

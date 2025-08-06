@@ -3,19 +3,13 @@ using Microsoft.EntityFrameworkCore;
 
 namespace ExchangeApi.Data
 {
-    public class DbConnect : DbContext
+    public class DbConnect(DbContextOptions<DbConnect> options) : DbContext(options)
     {
-
-        public DbConnect(DbContextOptions<DbConnect> options) : base(options)
-        {
-
-        }
         public DbSet<ExchangeResult> ExchangeResult { get; set; }
         public DbSet<CurrencyQuery> CurrencyQuery { get; set; }
-        public DbSet<FavoriteQueries> FavoriteQueries
-        {
-            get; set;
+        public DbSet<FavoriteQueries> FavoriteQueries { get; set; }
+        public DbSet<UsersInfo> UsersInfo { get; set; }
 
-        }
+      
     }
 }

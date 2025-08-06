@@ -1,0 +1,1033 @@
+2025-07-29 10:29:22 Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"] 
+ 2025-07-29 10:29:22 Middleware loaded 
+ 2025-07-29 10:29:22 Middleware loaded. Script "/_framework/aspnetcore-browser-refresh.js" ("16507" B). 
+ 2025-07-29 10:29:22 Middleware loaded. Script "/_framework/blazor-hotreload.js" ("799" B). 
+ 2025-07-29 10:29:27 Middleware loaded: DOTNET_MODIFIABLE_ASSEMBLIES="debug", __ASPNETCORE_BROWSER_TOOLS="true" 
+ 2025-07-29 10:29:27 Now listening on: "https://localhost:7010" 
+ 2025-07-29 10:29:27 Now listening on: "http://localhost:5206" 
+ 2025-07-29 10:29:27 Loaded hosting startup assembly "ExchangeApi" 
+ 2025-07-29 10:29:27 Loaded hosting startup assembly "Microsoft.WebTools.ApiEndpointDiscovery" 
+ 2025-07-29 10:29:27 Loaded hosting startup assembly "Microsoft.AspNetCore.Watch.BrowserRefresh" 
+ 2025-07-29 10:29:27 Loaded hosting startup assembly "Microsoft.WebTools.BrowserLink.Net" 
+ 2025-07-29 10:29:28 Connection id ""0HNEEF8492GNJ"" received FIN. 
+ 2025-07-29 10:29:28 Connection id ""0HNEEF8492GNK"" received FIN. 
+ 2025-07-29 10:29:28 Failed to authenticate HTTPS connection. 
+ System.IO.IOException: Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveHandshakeFrameAsync[TIOAdapter](CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](Boolean receiveFirst, Byte[] reAuthenticationData, CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ProcessAuthenticationWithTelemetryAsync(Boolean isAsync, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2025-07-29 10:29:28 Failed to authenticate HTTPS connection. 
+ System.IO.IOException: Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveHandshakeFrameAsync[TIOAdapter](CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](Boolean receiveFirst, Byte[] reAuthenticationData, CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ProcessAuthenticationWithTelemetryAsync(Boolean isAsync, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2025-07-29 10:29:28 Connection id ""0HNEEF8492GNK"" sending FIN because: ""The Socket transport's send loop completed gracefully."" 
+ 2025-07-29 10:29:28 Connection id ""0HNEEF8492GNJ"" sending FIN because: ""The Socket transport's send loop completed gracefully."" 
+ 2025-07-29 10:29:28 Connection "0HNEEF8492GNL" established using the following protocol: Tls13 
+ 2025-07-29 10:29:28 Request starting "HTTP/2" "GET" "https"://"localhost:7010""""/""" - null null 
+ 2025-07-29 10:29:29 Wildcard detected, all requests with hosts will be allowed. 
+ 2025-07-29 10:29:29 No candidates found for the request path '"/"' 
+ 2025-07-29 10:29:29 Request did not match any endpoints 
+ 2025-07-29 10:29:29 The request path "" does not match the path filter 
+ 2025-07-29 10:29:29 Request finished "HTTP/2" "GET" "https"://"localhost:7010""""/""" - 404 0 null 230.8942ms 
+ 2025-07-29 10:29:29 Request reached the end of the middleware pipeline without being handled by application code. Request path: "GET" "https"://"localhost:7010""""/", Response status code: 404 
+ 2025-07-29 10:29:30 Request starting "HTTP/2" "GET" "https"://"localhost:7010""""/swagger/index.html""" - null null 
+ 2025-07-29 10:29:30 No candidates found for the request path '"/swagger/index.html"' 
+ 2025-07-29 10:29:30 Request did not match any endpoints 
+ 2025-07-29 10:29:30 Response markup is scheduled to include Browser Link script injection. 
+ 2025-07-29 10:29:30 Response markup is scheduled to include browser refresh script injection. 
+ 2025-07-29 10:29:30 Response markup was updated to include Browser Link script injection. 
+ 2025-07-29 10:29:30 Response markup was updated to include browser refresh script injection. 
+ 2025-07-29 10:29:30 Request finished "HTTP/2" "GET" "https"://"localhost:7010""""/swagger/index.html""" - 200 null "text/html;charset=utf-8" 65.2883ms 
+ 2025-07-29 10:29:30 Request starting "HTTP/2" "GET" "https"://"localhost:7010""""/swagger/index.js""" - null null 
+ 2025-07-29 10:29:30 No candidates found for the request path '"/swagger/index.js"' 
+ 2025-07-29 10:29:30 Request did not match any endpoints 
+ 2025-07-29 10:29:30 Request starting "HTTP/2" "GET" "https"://"localhost:7010""""/_framework/aspnetcore-browser-refresh.js""" - null null 
+ 2025-07-29 10:29:30 Request finished "HTTP/2" "GET" "https"://"localhost:7010""""/swagger/index.js""" - 200 null "application/javascript;charset=utf-8" 5.0626ms 
+ 2025-07-29 10:29:30 Request starting "HTTP/2" "GET" "https"://"localhost:7010""""/_vs/browserLink""" - null null 
+ 2025-07-29 10:29:30 Script injected: "/_framework/aspnetcore-browser-refresh.js" 
+ 2025-07-29 10:29:30 Request finished "HTTP/2" "GET" "https"://"localhost:7010""""/_framework/aspnetcore-browser-refresh.js""" - 200 16507 "application/javascript; charset=utf-8" 12.2101ms 
+ 2025-07-29 10:29:30 Request finished "HTTP/2" "GET" "https"://"localhost:7010""""/_vs/browserLink""" - 200 null "text/javascript; charset=UTF-8" 63.2541ms 
+ 2025-07-29 10:29:30 Request starting "HTTP/2" "GET" "https"://"localhost:7010""""/swagger/v1/swagger.json""" - null null 
+ 2025-07-29 10:29:30 No candidates found for the request path '"/swagger/v1/swagger.json"' 
+ 2025-07-29 10:29:30 Request did not match any endpoints 
+ 2025-07-29 10:29:30 Request finished "HTTP/2" "GET" "https"://"localhost:7010""""/swagger/v1/swagger.json""" - 200 null "application/json;charset=utf-8" 10.0319ms 
+ 2025-07-29 10:29:36 Request starting "HTTP/2" "GET" "https"://"localhost:7010""""/api/fav-query""?name=efe" - null null 
+ 2025-07-29 10:29:36 1 candidate(s) found for the request path '"/api/fav-query"' 
+ 2025-07-29 10:29:36 Endpoint '"ExchangeApi.Controllers.ExchangeController.QueriesGet (ExchangeApi)"' with route pattern '"api/fav-query"' is valid for the request path '"/api/fav-query"' 
+ 2025-07-29 10:29:36 Request matched endpoint '"ExchangeApi.Controllers.ExchangeController.QueriesGet (ExchangeApi)"' 
+ 2025-07-29 10:29:36 Static files was skipped as the request already matched an endpoint. 
+ 2025-07-29 10:29:36 Executing endpoint '"ExchangeApi.Controllers.ExchangeController.QueriesGet (ExchangeApi)"' 
+ 2025-07-29 10:29:36 Route matched with "{action = \"QueriesGet\", controller = \"Exchange\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] QueriesGet(System.String)" on controller "ExchangeApi.Controllers.ExchangeController" ("ExchangeApi"). 
+ 2025-07-29 10:29:36 Execution plan of "authorization" filters (in the following order): ["None"] 
+ 2025-07-29 10:29:36 Execution plan of "resource" filters (in the following order): ["None"] 
+ 2025-07-29 10:29:36 Execution plan of "action" filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)", "Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"] 
+ 2025-07-29 10:29:36 Execution plan of "exception" filters (in the following order): ["None"] 
+ 2025-07-29 10:29:36 Execution plan of "result" filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"] 
+ 2025-07-29 10:29:36 Executing controller factory for controller "ExchangeApi.Controllers.ExchangeController" ("ExchangeApi") 
+ 2025-07-29 10:29:36 An 'IServiceProvider' was created for internal use by Entity Framework. 
+ 2025-07-29 10:29:36 Executed controller factory for controller "ExchangeApi.Controllers.ExchangeController" ("ExchangeApi") 
+ 2025-07-29 10:29:36 Attempting to bind parameter '"name"' of type '"System.String"' ... 
+ 2025-07-29 10:29:36 Attempting to bind parameter '"name"' of type '"System.String"' using the name '"name"' in request data ... 
+ 2025-07-29 10:29:36 Done attempting to bind parameter '"name"' of type '"System.String"'. 
+ 2025-07-29 10:29:36 Done attempting to bind parameter '"name"' of type '"System.String"'. 
+ 2025-07-29 10:29:36 Attempting to validate the bound parameter '"name"' of type '"System.String"' ... 
+ 2025-07-29 10:29:36 Done attempting to validate the bound parameter '"name"' of type '"System.String"'. 
+ 2025-07-29 10:29:36 Entity Framework Core "9.0.7" initialized '"DbConnect"' using provider '"Microsoft.EntityFrameworkCore.SqlServer":"9.0.7"' with options: "EngineType=SqlServer " 
+ 2025-07-29 10:29:37 Compiling query expression: "
+"'"DbSet<FavoriteQueries>()
+    .Where(q => q.Name == __name_0)
+    .OrderBy(q => q.Id)"' 
+ 2025-07-29 10:29:37 Generated query execution expression: "
+"'"queryContext => SingleQueryingEnumerable.Create<FavoriteQueries>(
+    relationalQueryContext: (RelationalQueryContext)queryContext, 
+    relationalCommandResolver: parameters => [LIFTABLE Constant: RelationalCommandCache.QueryExpression(
+        Projection Mapping:
+            EmptyProjectionMember -> Dictionary<IProperty, int> { [Property: FavoriteQueries.Id (int) Required PK AfterSave:Throw ValueGenerated.OnAdd, 0], [Property: FavoriteQueries.Base (string) Required MaxLength(3), 1], [Property: FavoriteQueries.Name (string) Required MaxLength(50), 2], [Property: FavoriteQueries.Rate (decimal) Required, 3], [Property: FavoriteQueries.Target (string) Required MaxLength(3), 4] }
+        SELECT f.Id, f.Base, f.Name, f.Rate, f.Target
+        FROM FavoriteQueries AS f
+        WHERE f.Name == @__name_0
+        ORDER BY f.Id ASC) | Resolver: c => new RelationalCommandCache(
+        c.Dependencies.MemoryCache, 
+        c.RelationalDependencies.QuerySqlGeneratorFactory, 
+        c.RelationalDependencies.RelationalParameterBasedSqlProcessorFactory, 
+        Projection Mapping:
+            EmptyProjectionMember -> Dictionary<IProperty, int> { [Property: FavoriteQueries.Id (int) Required PK AfterSave:Throw ValueGenerated.OnAdd, 0], [Property: FavoriteQueries.Base (string) Required MaxLength(3), 1], [Property: FavoriteQueries.Name (string) Required MaxLength(50), 2], [Property: FavoriteQueries.Rate (decimal) Required, 3], [Property: FavoriteQueries.Target (string) Required MaxLength(3), 4] }
+        SELECT f.Id, f.Base, f.Name, f.Rate, f.Target
+        FROM FavoriteQueries AS f
+        WHERE f.Name == @__name_0
+        ORDER BY f.Id ASC, 
+        False, 
+        new HashSet<string>(
+            new string[]{ }, 
+            StringComparer.Ordinal
+        )
+    )].GetRelationalCommandTemplate(parameters), 
+    readerColumns: null, 
+    shaper: (queryContext, dataReader, resultContext, resultCoordinator) => 
+    {
+        FavoriteQueries entity;
+        entity = 
+        {
+            MaterializationContext materializationContext1;
+            IEntityType entityType1;
+            FavoriteQueries instance1;
+            InternalEntityEntry entry1;
+            bool hasNullKey1;
+            materializationContext1 = new MaterializationContext(
+                [LIFTABLE Constant: ValueBuffer | Resolver: _ => (object)ValueBuffer.Empty], 
+                queryContext.Context
+            );
+            instance1 = default(FavoriteQueries);
+            entry1 = queryContext.TryGetEntry(
+                key: [LIFTABLE Constant: Key: FavoriteQueries.Id PK | Resolver: c => c.Dependencies.Model.FindEntityType(\"ExchangeApi.Models.Entities.FavoriteQueries\").FindPrimaryKey()], 
+                keyValues: new object[]{ (object)dataReader.GetInt32(0) }, 
+                throwOnNullKey: True, 
+                hasNullKey: hasNullKey1);
+            !(hasNullKey1) ? entry1 != default(InternalEntityEntry) ? 
+            {
+                entityType1 = entry1.EntityType;
+                return instance1 = (FavoriteQueries)entry1.Entity;
+            } : 
+            {
+                ISnapshot shadowSnapshot1;
+                shadowSnapshot1 = [LIFTABLE Constant: Snapshot | Resolver: _ => Snapshot.Empty];
+                entityType1 = [LIFTABLE Constant: EntityType: FavoriteQueries | Resolver: namelessParameter{0} => namelessParameter{0}.Dependencies.Model.FindEntityType(\"ExchangeApi.Models.Entities.FavoriteQueries\")];
+                instance1 = switch (entityType1)
+                {
+                    case [LIFTABLE Constant: EntityType: FavoriteQueries | Resolver: namelessParameter{1} => namelessParameter{1}.Dependencies.Model.FindEntityType(\"ExchangeApi.Models.Entities.FavoriteQueries\")]: 
+                        {
+                            return 
+                            {
+                                FavoriteQueries instance;
+                                instance = new FavoriteQueries();
+                                instance.<Id>k__BackingField = dataReader.GetInt32(0);
+                                instance.<Base>k__BackingField = dataReader.GetString(1);
+                                instance.<Name>k__BackingField = dataReader.GetString(2);
+                                instance.<Rate>k__BackingField = dataReader.GetDecimal(3);
+                                instance.<Target>k__BackingField = dataReader.GetString(4);
+                                (instance is IInjectableService) ? ((IInjectableService)instance).Injected(
+                                    context: materializationContext1.Context, 
+                                    entity: instance, 
+                                    queryTrackingBehavior: TrackAll, 
+                                    structuralType: [LIFTABLE Constant: EntityType: FavoriteQueries | Resolver: namelessParameter{2} => namelessParameter{2}.Dependencies.Model.FindEntityType(\"ExchangeApi.Models.Entities.FavoriteQueries\")]) : default(void);
+                                return instance;
+                            }}
+                    default: 
+                        default(FavoriteQueries)
+                }
+                ;
+                entry1 = entityType1 == default(IEntityType) ? default(InternalEntityEntry) : queryContext.StartTracking(
+                    entityType: entityType1, 
+                    entity: instance1, 
+                    snapshot: shadowSnapshot1);
+                return instance1;
+            } : default(void);
+            return instance1;
+        };
+        return entity;
+    }, 
+    contextType: ExchangeApi.Data.DbConnect, 
+    standAloneStateManager: False, 
+    detailedErrorsEnabled: False, 
+    threadSafetyChecksEnabled: True)"' 
+ 2025-07-29 10:29:37 Creating DbConnection. 
+ 2025-07-29 10:29:37 Created DbConnection. (12ms). 
+ 2025-07-29 10:29:37 Opening connection to database '"ExchangeDbProd"' on server '"(localdb)\MSSQLLocalDB"'. 
+ 2025-07-29 10:29:37 Opened connection to database '"ExchangeDbProd"' on server '"(localdb)\MSSQLLocalDB"'. 
+ 2025-07-29 10:29:37 Creating DbCommand for '"ExecuteReader"'. 
+ 2025-07-29 10:29:37 Created DbCommand for '"ExecuteReader"' (2ms). 
+ 2025-07-29 10:29:37 Initialized DbCommand for '"ExecuteReader"' (10ms). 
+ 2025-07-29 10:29:37 Executing DbCommand [Parameters=["@__name_0='?' (Size = 50)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [f].[Id], [f].[Base], [f].[Name], [f].[Rate], [f].[Target]
+FROM [FavoriteQueries] AS [f]
+WHERE [f].[Name] = @__name_0
+ORDER BY [f].[Id]" 
+ 2025-07-29 10:29:37 Executed DbCommand ("46"ms) [Parameters=["@__name_0='?' (Size = 50)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [f].[Id], [f].[Base], [f].[Name], [f].[Rate], [f].[Target]
+FROM [FavoriteQueries] AS [f]
+WHERE [f].[Name] = @__name_0
+ORDER BY [f].[Id]" 
+ 2025-07-29 10:29:37 Closing data reader to '"ExchangeDbProd"' on server '"(localdb)\MSSQLLocalDB"'. 
+ 2025-07-29 10:29:37 A data reader for '"ExchangeDbProd"' on server '"(localdb)\MSSQLLocalDB"' is being disposed after spending 10ms reading results. 
+ 2025-07-29 10:29:37 Closing connection to database '"ExchangeDbProd"' on server '"(localdb)\MSSQLLocalDB"'. 
+ 2025-07-29 10:29:37 Closed connection to database '"ExchangeDbProd"' on server '"(localdb)\MSSQLLocalDB"' (3ms). 
+ 2025-07-29 10:29:37 Retrieved 0 favorite queries from the database for name "EFE" 
+ 2025-07-29 10:29:37 No fav queries found for that name 
+ 2025-07-29 10:29:37 List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter", "Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter", "Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter", "Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"] 
+ 2025-07-29 10:29:37 No information found on request to perform content negotiation. 
+ 2025-07-29 10:29:37 Attempting to select an output formatter without using a content type as no explicit content types were specified for the response. 
+ 2025-07-29 10:29:37 Attempting to select the first formatter in the output formatters list which can write the result. 
+ 2025-07-29 10:29:37 Selected output formatter '"Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter"' and content type '"text/plain"' to write the response. 
+ 2025-07-29 10:29:37 Executing "NotFoundObjectResult", writing value of type '"System.String"'. 
+ 2025-07-29 10:29:37 Executed action "ExchangeApi.Controllers.ExchangeController.QueriesGet (ExchangeApi)" in 1280.0097ms 
+ 2025-07-29 10:29:37 Executed endpoint '"ExchangeApi.Controllers.ExchangeController.QueriesGet (ExchangeApi)"' 
+ 2025-07-29 10:29:37 '"DbConnect"' disposed. 
+ 2025-07-29 10:29:37 Disposing connection to database '"ExchangeDbProd"' on server '"(localdb)\MSSQLLocalDB"'. 
+ 2025-07-29 10:29:37 Disposed connection to database '""' on server '""' (1ms). 
+ 2025-07-29 10:29:37 Request finished "HTTP/2" "GET" "https"://"localhost:7010""""/api/fav-query""?name=efe" - 404 null "text/plain; charset=utf-8" 1326.5051ms 
+ 2025-07-29 10:29:45 Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"] 
+ 2025-07-29 10:29:45 Middleware loaded 
+ 2025-07-29 10:29:45 Middleware loaded. Script "/_framework/aspnetcore-browser-refresh.js" ("16507" B). 
+ 2025-07-29 10:29:45 Middleware loaded. Script "/_framework/blazor-hotreload.js" ("799" B). 
+ 2025-07-29 10:29:46 Middleware loaded: DOTNET_MODIFIABLE_ASSEMBLIES="debug", __ASPNETCORE_BROWSER_TOOLS="true" 
+ 2025-07-29 10:29:46 Now listening on: "https://localhost:7010" 
+ 2025-07-29 10:29:46 Now listening on: "http://localhost:5206" 
+ 2025-07-29 10:29:46 Loaded hosting startup assembly "ExchangeApi" 
+ 2025-07-29 10:29:46 Loaded hosting startup assembly "Microsoft.WebTools.ApiEndpointDiscovery" 
+ 2025-07-29 10:29:46 Loaded hosting startup assembly "Microsoft.AspNetCore.Watch.BrowserRefresh" 
+ 2025-07-29 10:29:46 Loaded hosting startup assembly "Microsoft.WebTools.BrowserLink.Net" 
+ 2025-07-29 10:29:46 Connection id ""0HNEEF89N7VVM"" received FIN. 
+ 2025-07-29 10:29:46 Connection id ""0HNEEF89N7VVN"" received FIN. 
+ 2025-07-29 10:29:46 Failed to authenticate HTTPS connection. 
+ System.IO.IOException: Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveHandshakeFrameAsync[TIOAdapter](CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](Boolean receiveFirst, Byte[] reAuthenticationData, CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ProcessAuthenticationWithTelemetryAsync(Boolean isAsync, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2025-07-29 10:29:46 Failed to authenticate HTTPS connection. 
+ System.IO.IOException: Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveHandshakeFrameAsync[TIOAdapter](CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](Boolean receiveFirst, Byte[] reAuthenticationData, CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ProcessAuthenticationWithTelemetryAsync(Boolean isAsync, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2025-07-29 10:29:46 Connection id ""0HNEEF89N7VVM"" sending FIN because: ""The Socket transport's send loop completed gracefully."" 
+ 2025-07-29 10:29:46 Connection id ""0HNEEF89N7VVN"" sending FIN because: ""The Socket transport's send loop completed gracefully."" 
+ 2025-07-29 10:29:46 Connection "0HNEEF89N7VVO" established using the following protocol: Tls13 
+ 2025-07-29 10:29:46 Request starting "HTTP/2" "GET" "https"://"localhost:7010""""/""" - null null 
+ 2025-07-29 10:29:47 Wildcard detected, all requests with hosts will be allowed. 
+ 2025-07-29 10:29:47 No candidates found for the request path '"/"' 
+ 2025-07-29 10:29:47 Request did not match any endpoints 
+ 2025-07-29 10:29:47 The request path "" does not match the path filter 
+ 2025-07-29 10:29:47 Request finished "HTTP/2" "GET" "https"://"localhost:7010""""/""" - 404 0 null 145.3751ms 
+ 2025-07-29 10:29:47 Request reached the end of the middleware pipeline without being handled by application code. Request path: "GET" "https"://"localhost:7010""""/", Response status code: 404 
+ 2025-07-29 10:31:38 Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"] 
+ 2025-07-29 10:31:38 Hosting starting 
+ 2025-07-29 10:31:38 Middleware loaded 
+ 2025-07-29 10:31:38 Middleware loaded. Script "/_framework/aspnetcore-browser-refresh.js" ("16507" B). 
+ 2025-07-29 10:31:38 Middleware loaded. Script "/_framework/blazor-hotreload.js" ("799" B). 
+ 2025-07-29 10:31:38 Middleware loaded: DOTNET_MODIFIABLE_ASSEMBLIES="debug", __ASPNETCORE_BROWSER_TOOLS="true" 
+ 2025-07-29 10:31:38 Now listening on: "https://localhost:7010" 
+ 2025-07-29 10:31:38 Now listening on: "http://localhost:5206" 
+ 2025-07-29 10:31:38 Loaded hosting startup assembly "ExchangeApi" 
+ 2025-07-29 10:31:38 Loaded hosting startup assembly "Microsoft.WebTools.ApiEndpointDiscovery" 
+ 2025-07-29 10:31:38 Loaded hosting startup assembly "Microsoft.AspNetCore.Watch.BrowserRefresh" 
+ 2025-07-29 10:31:38 Loaded hosting startup assembly "Microsoft.WebTools.BrowserLink.Net" 
+ 2025-07-29 10:31:38 Application started. Press Ctrl+C to shut down. 
+ 2025-07-29 10:31:38 Hosting environment: "Production" 
+ 2025-07-29 10:31:38 Content root path: "C:\Users\bbalci\source\repos\ExchangeApi\ExchangeApi" 
+ 2025-07-29 10:31:38 Hosting started 
+ 2025-07-29 10:31:39 Connection id ""0HNEEF9B9QEU8"" accepted. 
+ 2025-07-29 10:31:39 Connection id ""0HNEEF9B9QEU9"" accepted. 
+ 2025-07-29 10:31:39 Connection id ""0HNEEF9B9QEU8"" started. 
+ 2025-07-29 10:31:39 Connection id ""0HNEEF9B9QEU9"" started. 
+ 2025-07-29 10:31:39 Connection id ""0HNEEF9B9QEU8"" received FIN. 
+ 2025-07-29 10:31:39 Connection id ""0HNEEF9B9QEU9"" received FIN. 
+ 2025-07-29 10:31:39 Failed to authenticate HTTPS connection. 
+ System.IO.IOException: Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveHandshakeFrameAsync[TIOAdapter](CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](Boolean receiveFirst, Byte[] reAuthenticationData, CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ProcessAuthenticationWithTelemetryAsync(Boolean isAsync, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2025-07-29 10:31:39 Failed to authenticate HTTPS connection. 
+ System.IO.IOException: Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveHandshakeFrameAsync[TIOAdapter](CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](Boolean receiveFirst, Byte[] reAuthenticationData, CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ProcessAuthenticationWithTelemetryAsync(Boolean isAsync, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2025-07-29 10:31:39 Connection id ""0HNEEF9B9QEU9"" stopped. 
+ 2025-07-29 10:31:39 Connection id ""0HNEEF9B9QEU8"" stopped. 
+ 2025-07-29 10:31:39 Connection id ""0HNEEF9B9QEU9"" sending FIN because: ""The Socket transport's send loop completed gracefully."" 
+ 2025-07-29 10:31:39 Connection id ""0HNEEF9B9QEU8"" sending FIN because: ""The Socket transport's send loop completed gracefully."" 
+ 2025-07-29 10:31:39 Connection id ""0HNEEF9B9QEUA"" accepted. 
+ 2025-07-29 10:31:39 Connection id ""0HNEEF9B9QEUA"" started. 
+ 2025-07-29 10:31:39 Connection "0HNEEF9B9QEUA" established using the following protocol: Tls13 
+ 2025-07-29 10:31:39 Request starting "HTTP/2" "GET" "https"://"localhost:7010""""/""" - null null 
+ 2025-07-29 10:31:39 Wildcard detected, all requests with hosts will be allowed. 
+ 2025-07-29 10:31:39 No candidates found for the request path '"/"' 
+ 2025-07-29 10:31:39 Request did not match any endpoints 
+ 2025-07-29 10:31:39 The request path "" does not match the path filter 
+ 2025-07-29 10:31:39 Request finished "HTTP/2" "GET" "https"://"localhost:7010""""/""" - 404 0 null 154.9396ms 
+ 2025-07-29 10:31:39 Request reached the end of the middleware pipeline without being handled by application code. Request path: "GET" "https"://"localhost:7010""""/", Response status code: 404 
+ 2025-07-29 10:31:42 Request starting "HTTP/2" "GET" "https"://"localhost:7010""""/swagger/index.html""" - null null 
+ 2025-07-29 10:31:42 No candidates found for the request path '"/swagger/index.html"' 
+ 2025-07-29 10:31:42 Request did not match any endpoints 
+ 2025-07-29 10:31:42 Response markup is scheduled to include Browser Link script injection. 
+ 2025-07-29 10:31:42 Response markup is scheduled to include browser refresh script injection. 
+ 2025-07-29 10:31:42 Response markup was updated to include Browser Link script injection. 
+ 2025-07-29 10:31:42 Response markup was updated to include browser refresh script injection. 
+ 2025-07-29 10:31:42 Request finished "HTTP/2" "GET" "https"://"localhost:7010""""/swagger/index.html""" - 200 null "text/html;charset=utf-8" 70.0887ms 
+ 2025-07-29 10:31:42 Request starting "HTTP/2" "GET" "https"://"localhost:7010""""/swagger/index.js""" - null null 
+ 2025-07-29 10:31:42 No candidates found for the request path '"/swagger/index.js"' 
+ 2025-07-29 10:31:42 Request did not match any endpoints 
+ 2025-07-29 10:31:42 Request finished "HTTP/2" "GET" "https"://"localhost:7010""""/swagger/index.js""" - 200 null "application/javascript;charset=utf-8" 3.256ms 
+ 2025-07-29 10:31:42 Request starting "HTTP/2" "GET" "https"://"localhost:7010""""/_framework/aspnetcore-browser-refresh.js""" - null null 
+ 2025-07-29 10:31:42 Request starting "HTTP/2" "GET" "https"://"localhost:7010""""/_vs/browserLink""" - null null 
+ 2025-07-29 10:31:42 Script injected: "/_framework/aspnetcore-browser-refresh.js" 
+ 2025-07-29 10:31:42 Request finished "HTTP/2" "GET" "https"://"localhost:7010""""/_framework/aspnetcore-browser-refresh.js""" - 200 16507 "application/javascript; charset=utf-8" 12.3074ms 
+ 2025-07-29 10:31:42 Request finished "HTTP/2" "GET" "https"://"localhost:7010""""/_vs/browserLink""" - 200 null "text/javascript; charset=UTF-8" 41.4367ms 
+ 2025-07-29 10:31:42 Request starting "HTTP/2" "GET" "https"://"localhost:7010""""/swagger/v1/swagger.json""" - null null 
+ 2025-07-29 10:31:42 No candidates found for the request path '"/swagger/v1/swagger.json"' 
+ 2025-07-29 10:31:42 Request did not match any endpoints 
+ 2025-07-29 10:31:42 Request finished "HTTP/2" "GET" "https"://"localhost:7010""""/swagger/v1/swagger.json""" - 200 null "application/json;charset=utf-8" 6.456ms 
+ 2025-07-29 10:31:49 Request starting "HTTP/2" "GET" "https"://"localhost:7010""""/api/fav-query""?name=efe" - null null 
+ 2025-07-29 10:31:49 1 candidate(s) found for the request path '"/api/fav-query"' 
+ 2025-07-29 10:31:49 Endpoint '"ExchangeApi.Controllers.ExchangeController.QueriesGet (ExchangeApi)"' with route pattern '"api/fav-query"' is valid for the request path '"/api/fav-query"' 
+ 2025-07-29 10:31:49 Request matched endpoint '"ExchangeApi.Controllers.ExchangeController.QueriesGet (ExchangeApi)"' 
+ 2025-07-29 10:31:49 Static files was skipped as the request already matched an endpoint. 
+ 2025-07-29 10:31:49 Executing endpoint '"ExchangeApi.Controllers.ExchangeController.QueriesGet (ExchangeApi)"' 
+ 2025-07-29 10:31:49 Route matched with "{action = \"QueriesGet\", controller = \"Exchange\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] QueriesGet(System.String)" on controller "ExchangeApi.Controllers.ExchangeController" ("ExchangeApi"). 
+ 2025-07-29 10:31:49 Execution plan of "authorization" filters (in the following order): ["None"] 
+ 2025-07-29 10:31:49 Execution plan of "resource" filters (in the following order): ["None"] 
+ 2025-07-29 10:31:49 Execution plan of "action" filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)", "Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"] 
+ 2025-07-29 10:31:49 Execution plan of "exception" filters (in the following order): ["None"] 
+ 2025-07-29 10:31:49 Execution plan of "result" filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"] 
+ 2025-07-29 10:31:49 Executing controller factory for controller "ExchangeApi.Controllers.ExchangeController" ("ExchangeApi") 
+ 2025-07-29 10:31:49 An 'IServiceProvider' was created for internal use by Entity Framework. 
+ 2025-07-29 10:31:49 Executed controller factory for controller "ExchangeApi.Controllers.ExchangeController" ("ExchangeApi") 
+ 2025-07-29 10:31:49 Attempting to bind parameter '"name"' of type '"System.String"' ... 
+ 2025-07-29 10:31:49 Attempting to bind parameter '"name"' of type '"System.String"' using the name '"name"' in request data ... 
+ 2025-07-29 10:31:49 Done attempting to bind parameter '"name"' of type '"System.String"'. 
+ 2025-07-29 10:31:49 Done attempting to bind parameter '"name"' of type '"System.String"'. 
+ 2025-07-29 10:31:49 Attempting to validate the bound parameter '"name"' of type '"System.String"' ... 
+ 2025-07-29 10:31:49 Done attempting to validate the bound parameter '"name"' of type '"System.String"'. 
+ 2025-07-29 10:31:50 Entity Framework Core "9.0.7" initialized '"DbConnect"' using provider '"Microsoft.EntityFrameworkCore.SqlServer":"9.0.7"' with options: "EngineType=SqlServer " 
+ 2025-07-29 10:31:50 Compiling query expression: "
+"'"DbSet<FavoriteQueries>()
+    .Where(q => q.Name == __name_0)
+    .OrderBy(q => q.Id)"' 
+ 2025-07-29 10:31:50 Generated query execution expression: "
+"'"queryContext => SingleQueryingEnumerable.Create<FavoriteQueries>(
+    relationalQueryContext: (RelationalQueryContext)queryContext, 
+    relationalCommandResolver: parameters => [LIFTABLE Constant: RelationalCommandCache.QueryExpression(
+        Projection Mapping:
+            EmptyProjectionMember -> Dictionary<IProperty, int> { [Property: FavoriteQueries.Id (int) Required PK AfterSave:Throw ValueGenerated.OnAdd, 0], [Property: FavoriteQueries.Base (string) Required MaxLength(3), 1], [Property: FavoriteQueries.Name (string) Required MaxLength(50), 2], [Property: FavoriteQueries.Rate (decimal) Required, 3], [Property: FavoriteQueries.Target (string) Required MaxLength(3), 4] }
+        SELECT f.Id, f.Base, f.Name, f.Rate, f.Target
+        FROM FavoriteQueries AS f
+        WHERE f.Name == @__name_0
+        ORDER BY f.Id ASC) | Resolver: c => new RelationalCommandCache(
+        c.Dependencies.MemoryCache, 
+        c.RelationalDependencies.QuerySqlGeneratorFactory, 
+        c.RelationalDependencies.RelationalParameterBasedSqlProcessorFactory, 
+        Projection Mapping:
+            EmptyProjectionMember -> Dictionary<IProperty, int> { [Property: FavoriteQueries.Id (int) Required PK AfterSave:Throw ValueGenerated.OnAdd, 0], [Property: FavoriteQueries.Base (string) Required MaxLength(3), 1], [Property: FavoriteQueries.Name (string) Required MaxLength(50), 2], [Property: FavoriteQueries.Rate (decimal) Required, 3], [Property: FavoriteQueries.Target (string) Required MaxLength(3), 4] }
+        SELECT f.Id, f.Base, f.Name, f.Rate, f.Target
+        FROM FavoriteQueries AS f
+        WHERE f.Name == @__name_0
+        ORDER BY f.Id ASC, 
+        False, 
+        new HashSet<string>(
+            new string[]{ }, 
+            StringComparer.Ordinal
+        )
+    )].GetRelationalCommandTemplate(parameters), 
+    readerColumns: null, 
+    shaper: (queryContext, dataReader, resultContext, resultCoordinator) => 
+    {
+        FavoriteQueries entity;
+        entity = 
+        {
+            MaterializationContext materializationContext1;
+            IEntityType entityType1;
+            FavoriteQueries instance1;
+            InternalEntityEntry entry1;
+            bool hasNullKey1;
+            materializationContext1 = new MaterializationContext(
+                [LIFTABLE Constant: ValueBuffer | Resolver: _ => (object)ValueBuffer.Empty], 
+                queryContext.Context
+            );
+            instance1 = default(FavoriteQueries);
+            entry1 = queryContext.TryGetEntry(
+                key: [LIFTABLE Constant: Key: FavoriteQueries.Id PK | Resolver: c => c.Dependencies.Model.FindEntityType(\"ExchangeApi.Models.Entities.FavoriteQueries\").FindPrimaryKey()], 
+                keyValues: new object[]{ (object)dataReader.GetInt32(0) }, 
+                throwOnNullKey: True, 
+                hasNullKey: hasNullKey1);
+            !(hasNullKey1) ? entry1 != default(InternalEntityEntry) ? 
+            {
+                entityType1 = entry1.EntityType;
+                return instance1 = (FavoriteQueries)entry1.Entity;
+            } : 
+            {
+                ISnapshot shadowSnapshot1;
+                shadowSnapshot1 = [LIFTABLE Constant: Snapshot | Resolver: _ => Snapshot.Empty];
+                entityType1 = [LIFTABLE Constant: EntityType: FavoriteQueries | Resolver: namelessParameter{0} => namelessParameter{0}.Dependencies.Model.FindEntityType(\"ExchangeApi.Models.Entities.FavoriteQueries\")];
+                instance1 = switch (entityType1)
+                {
+                    case [LIFTABLE Constant: EntityType: FavoriteQueries | Resolver: namelessParameter{1} => namelessParameter{1}.Dependencies.Model.FindEntityType(\"ExchangeApi.Models.Entities.FavoriteQueries\")]: 
+                        {
+                            return 
+                            {
+                                FavoriteQueries instance;
+                                instance = new FavoriteQueries();
+                                instance.<Id>k__BackingField = dataReader.GetInt32(0);
+                                instance.<Base>k__BackingField = dataReader.GetString(1);
+                                instance.<Name>k__BackingField = dataReader.GetString(2);
+                                instance.<Rate>k__BackingField = dataReader.GetDecimal(3);
+                                instance.<Target>k__BackingField = dataReader.GetString(4);
+                                (instance is IInjectableService) ? ((IInjectableService)instance).Injected(
+                                    context: materializationContext1.Context, 
+                                    entity: instance, 
+                                    queryTrackingBehavior: TrackAll, 
+                                    structuralType: [LIFTABLE Constant: EntityType: FavoriteQueries | Resolver: namelessParameter{2} => namelessParameter{2}.Dependencies.Model.FindEntityType(\"ExchangeApi.Models.Entities.FavoriteQueries\")]) : default(void);
+                                return instance;
+                            }}
+                    default: 
+                        default(FavoriteQueries)
+                }
+                ;
+                entry1 = entityType1 == default(IEntityType) ? default(InternalEntityEntry) : queryContext.StartTracking(
+                    entityType: entityType1, 
+                    entity: instance1, 
+                    snapshot: shadowSnapshot1);
+                return instance1;
+            } : default(void);
+            return instance1;
+        };
+        return entity;
+    }, 
+    contextType: ExchangeApi.Data.DbConnect, 
+    standAloneStateManager: False, 
+    detailedErrorsEnabled: False, 
+    threadSafetyChecksEnabled: True)"' 
+ 2025-07-29 10:31:50 Creating DbConnection. 
+ 2025-07-29 10:31:50 Created DbConnection. (13ms). 
+ 2025-07-29 10:31:50 Opening connection to database '"ExchangeDbProd"' on server '"(localdb)\MSSQLLocalDB"'. 
+ 2025-07-29 10:31:51 Opened connection to database '"ExchangeDbProd"' on server '"(localdb)\MSSQLLocalDB"'. 
+ 2025-07-29 10:31:51 Creating DbCommand for '"ExecuteReader"'. 
+ 2025-07-29 10:31:51 Created DbCommand for '"ExecuteReader"' (3ms). 
+ 2025-07-29 10:31:51 Initialized DbCommand for '"ExecuteReader"' (15ms). 
+ 2025-07-29 10:31:51 Executing DbCommand [Parameters=["@__name_0='?' (Size = 50)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [f].[Id], [f].[Base], [f].[Name], [f].[Rate], [f].[Target]
+FROM [FavoriteQueries] AS [f]
+WHERE [f].[Name] = @__name_0
+ORDER BY [f].[Id]" 
+ 2025-07-29 10:31:51 Executed DbCommand ("77"ms) [Parameters=["@__name_0='?' (Size = 50)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [f].[Id], [f].[Base], [f].[Name], [f].[Rate], [f].[Target]
+FROM [FavoriteQueries] AS [f]
+WHERE [f].[Name] = @__name_0
+ORDER BY [f].[Id]" 
+ 2025-07-29 10:31:51 Closing data reader to '"ExchangeDbProd"' on server '"(localdb)\MSSQLLocalDB"'. 
+ 2025-07-29 10:31:51 A data reader for '"ExchangeDbProd"' on server '"(localdb)\MSSQLLocalDB"' is being disposed after spending 22ms reading results. 
+ 2025-07-29 10:31:51 Closing connection to database '"ExchangeDbProd"' on server '"(localdb)\MSSQLLocalDB"'. 
+ 2025-07-29 10:31:51 Closed connection to database '"ExchangeDbProd"' on server '"(localdb)\MSSQLLocalDB"' (10ms). 
+ 2025-07-29 10:31:51 Retrieved 0 favorite queries from the database for name "EFE" 
+ 2025-07-29 10:31:51 No fav queries found for that name 
+ 2025-07-29 10:31:51 List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter", "Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter", "Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter", "Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"] 
+ 2025-07-29 10:31:51 No information found on request to perform content negotiation. 
+ 2025-07-29 10:31:51 Attempting to select an output formatter without using a content type as no explicit content types were specified for the response. 
+ 2025-07-29 10:31:51 Attempting to select the first formatter in the output formatters list which can write the result. 
+ 2025-07-29 10:31:51 Selected output formatter '"Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter"' and content type '"text/plain"' to write the response. 
+ 2025-07-29 10:31:51 Executing "NotFoundObjectResult", writing value of type '"System.String"'. 
+ 2025-07-29 10:31:51 Executed action "ExchangeApi.Controllers.ExchangeController.QueriesGet (ExchangeApi)" in 1944.1642ms 
+ 2025-07-29 10:31:51 Executed endpoint '"ExchangeApi.Controllers.ExchangeController.QueriesGet (ExchangeApi)"' 
+ 2025-07-29 10:31:51 '"DbConnect"' disposed. 
+ 2025-07-29 10:31:51 Disposing connection to database '"ExchangeDbProd"' on server '"(localdb)\MSSQLLocalDB"'. 
+ 2025-07-29 10:31:51 Disposed connection to database '""' on server '""' (1ms). 
+ 2025-07-29 10:31:51 Request finished "HTTP/2" "GET" "https"://"localhost:7010""""/api/fav-query""?name=efe" - 404 null "text/plain; charset=utf-8" 2001.938ms 
+ 2025-07-29 10:32:03 Connection id ""0HNEEF9B9QEUA"" received FIN. 
+ 2025-07-29 10:32:03 Connection id ""0HNEEF9B9QEUA"" is closed. The last processed stream ID was 13. 
+ 2025-07-29 10:32:03 The connection queue processing loop for "0HNEEF9B9QEUA" completed. 
+ 2025-07-29 10:32:03 Connection id ""0HNEEF9B9QEUA"" sending FIN because: ""The Socket transport's send loop completed gracefully."" 
+ 2025-07-29 10:32:03 Connection id ""0HNEEF9B9QEUA"" stopped. 
+ 2025-07-29 10:32:35 Connection id ""0HNEEF9B9QEUB"" accepted. 
+ 2025-07-29 10:32:35 Connection id ""0HNEEF9B9QEUB"" started. 
+ 2025-07-29 10:32:35 Connection "0HNEEF9B9QEUB" established using the following protocol: Tls13 
+ 2025-07-29 10:32:35 Request starting "HTTP/2" "GET" "https"://"localhost:7010""""/api/exchange-rate""?BaseCurrency=usd&TargetCurrency=aud" - null null 
+ 2025-07-29 10:32:35 1 candidate(s) found for the request path '"/api/exchange-rate"' 
+ 2025-07-29 10:32:35 Endpoint '"ExchangeApi.Controllers.ExchangeController.GetExchangeRate (ExchangeApi)"' with route pattern '"api/exchange-rate"' is valid for the request path '"/api/exchange-rate"' 
+ 2025-07-29 10:32:35 Request matched endpoint '"ExchangeApi.Controllers.ExchangeController.GetExchangeRate (ExchangeApi)"' 
+ 2025-07-29 10:32:35 Static files was skipped as the request already matched an endpoint. 
+ 2025-07-29 10:32:35 Executing endpoint '"ExchangeApi.Controllers.ExchangeController.GetExchangeRate (ExchangeApi)"' 
+ 2025-07-29 10:32:35 Route matched with "{action = \"GetExchangeRate\", controller = \"Exchange\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetExchangeRate(System.String, System.String)" on controller "ExchangeApi.Controllers.ExchangeController" ("ExchangeApi"). 
+ 2025-07-29 10:32:35 Execution plan of "authorization" filters (in the following order): ["None"] 
+ 2025-07-29 10:32:35 Execution plan of "resource" filters (in the following order): ["None"] 
+ 2025-07-29 10:32:35 Execution plan of "action" filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)", "Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"] 
+ 2025-07-29 10:32:35 Execution plan of "exception" filters (in the following order): ["None"] 
+ 2025-07-29 10:32:35 Execution plan of "result" filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"] 
+ 2025-07-29 10:32:35 Executing controller factory for controller "ExchangeApi.Controllers.ExchangeController" ("ExchangeApi") 
+ 2025-07-29 10:32:35 Executed controller factory for controller "ExchangeApi.Controllers.ExchangeController" ("ExchangeApi") 
+ 2025-07-29 10:32:35 Attempting to bind parameter '"BaseCurrency"' of type '"System.String"' ... 
+ 2025-07-29 10:32:35 Attempting to bind parameter '"BaseCurrency"' of type '"System.String"' using the name '"BaseCurrency"' in request data ... 
+ 2025-07-29 10:32:35 Done attempting to bind parameter '"BaseCurrency"' of type '"System.String"'. 
+ 2025-07-29 10:32:35 Done attempting to bind parameter '"BaseCurrency"' of type '"System.String"'. 
+ 2025-07-29 10:32:35 Attempting to validate the bound parameter '"BaseCurrency"' of type '"System.String"' ... 
+ 2025-07-29 10:32:35 Done attempting to validate the bound parameter '"BaseCurrency"' of type '"System.String"'. 
+ 2025-07-29 10:32:35 Attempting to bind parameter '"TargetCurrency"' of type '"System.String"' ... 
+ 2025-07-29 10:32:35 Attempting to bind parameter '"TargetCurrency"' of type '"System.String"' using the name '"TargetCurrency"' in request data ... 
+ 2025-07-29 10:32:35 Done attempting to bind parameter '"TargetCurrency"' of type '"System.String"'. 
+ 2025-07-29 10:32:35 Done attempting to bind parameter '"TargetCurrency"' of type '"System.String"'. 
+ 2025-07-29 10:32:35 Attempting to validate the bound parameter '"TargetCurrency"' of type '"System.String"' ... 
+ 2025-07-29 10:32:35 Done attempting to validate the bound parameter '"TargetCurrency"' of type '"System.String"'. 
+ 2025-07-29 10:32:35 Start processing HTTP request "GET" "https://api.exchangerate.host/convert?access_key=1d5676c36d2508bed228dbfa2d1e5527&from=USD&to=AUD&amount=1" 
+ 2025-07-29 10:32:35 Sending HTTP request "GET" "https://api.exchangerate.host/convert?access_key=1d5676c36d2508bed228dbfa2d1e5527&from=USD&to=AUD&amount=1" 
+ 2025-07-29 10:32:35 Received HTTP response headers after 461.9415ms - 200 
+ 2025-07-29 10:32:35 End processing HTTP request after 467.9956ms - 200 
+ 2025-07-29 10:32:35 Entity Framework Core "9.0.7" initialized '"DbConnect"' using provider '"Microsoft.EntityFrameworkCore.SqlServer":"9.0.7"' with options: "EngineType=SqlServer " 
+ 2025-07-29 10:32:35 Compiling query expression: "
+"'"DbSet<CurrencyQuery>()
+    .FirstOrDefault(q => q.Base == __BaseCurrency_0 && q.Target == __TargetCurrency_1)"' 
+ 2025-07-29 10:32:35 Generated query execution expression: "
+"'"queryContext => ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync<CurrencyQuery>(
+    asyncEnumerable: SingleQueryingEnumerable.Create<CurrencyQuery>(
+        relationalQueryContext: (RelationalQueryContext)queryContext, 
+        relationalCommandResolver: parameters => [LIFTABLE Constant: RelationalCommandCache.QueryExpression(
+            Projection Mapping:
+                EmptyProjectionMember -> Dictionary<IProperty, int> { [Property: CurrencyQuery.Id (int) Required PK AfterSave:Throw ValueGenerated.OnAdd, 0], [Property: CurrencyQuery.Base (string) Required MaxLength(3), 1], [Property: CurrencyQuery.Target (string) Required MaxLength(3), 2] }
+            SELECT TOP(1) c.Id, c.Base, c.Target
+            FROM CurrencyQuery AS c
+            WHERE (c.Base == @__BaseCurrency_0) && (c.Target == @__TargetCurrency_1)) | Resolver: c => new RelationalCommandCache(
+            c.Dependencies.MemoryCache, 
+            c.RelationalDependencies.QuerySqlGeneratorFactory, 
+            c.RelationalDependencies.RelationalParameterBasedSqlProcessorFactory, 
+            Projection Mapping:
+                EmptyProjectionMember -> Dictionary<IProperty, int> { [Property: CurrencyQuery.Id (int) Required PK AfterSave:Throw ValueGenerated.OnAdd, 0], [Property: CurrencyQuery.Base (string) Required MaxLength(3), 1], [Property: CurrencyQuery.Target (string) Required MaxLength(3), 2] }
+            SELECT TOP(1) c.Id, c.Base, c.Target
+            FROM CurrencyQuery AS c
+            WHERE (c.Base == @__BaseCurrency_0) && (c.Target == @__TargetCurrency_1), 
+            False, 
+            new HashSet<string>(
+                new string[]{ }, 
+                StringComparer.Ordinal
+            )
+        )].GetRelationalCommandTemplate(parameters), 
+        readerColumns: null, 
+        shaper: (queryContext, dataReader, resultContext, resultCoordinator) => 
+        {
+            CurrencyQuery entity;
+            entity = 
+            {
+                MaterializationContext materializationContext1;
+                IEntityType entityType1;
+                CurrencyQuery instance1;
+                InternalEntityEntry entry1;
+                bool hasNullKey1;
+                materializationContext1 = new MaterializationContext(
+                    [LIFTABLE Constant: ValueBuffer | Resolver: _ => (object)ValueBuffer.Empty], 
+                    queryContext.Context
+                );
+                instance1 = default(CurrencyQuery);
+                entry1 = queryContext.TryGetEntry(
+                    key: [LIFTABLE Constant: Key: CurrencyQuery.Id PK | Resolver: c => c.Dependencies.Model.FindEntityType(\"ExchangeApi.Models.Entities.CurrencyQuery\").FindPrimaryKey()], 
+                    keyValues: new object[]{ (object)dataReader.GetInt32(0) }, 
+                    throwOnNullKey: True, 
+                    hasNullKey: hasNullKey1);
+                !(hasNullKey1) ? entry1 != default(InternalEntityEntry) ? 
+                {
+                    entityType1 = entry1.EntityType;
+                    return instance1 = (CurrencyQuery)entry1.Entity;
+                } : 
+                {
+                    ISnapshot shadowSnapshot1;
+                    shadowSnapshot1 = [LIFTABLE Constant: Snapshot | Resolver: _ => Snapshot.Empty];
+                    entityType1 = [LIFTABLE Constant: EntityType: CurrencyQuery | Resolver: namelessParameter{0} => namelessParameter{0}.Dependencies.Model.FindEntityType(\"ExchangeApi.Models.Entities.CurrencyQuery\")];
+                    instance1 = switch (entityType1)
+                    {
+                        case [LIFTABLE Constant: EntityType: CurrencyQuery | Resolver: namelessParameter{1} => namelessParameter{1}.Dependencies.Model.FindEntityType(\"ExchangeApi.Models.Entities.CurrencyQuery\")]: 
+                            {
+                                return 
+                                {
+                                    CurrencyQuery instance;
+                                    instance = new CurrencyQuery();
+                                    instance.<Id>k__BackingField = dataReader.GetInt32(0);
+                                    instance.<Base>k__BackingField = dataReader.GetString(1);
+                                    instance.<Target>k__BackingField = dataReader.GetString(2);
+                                    (instance is IInjectableService) ? ((IInjectableService)instance).Injected(
+                                        context: materializationContext1.Context, 
+                                        entity: instance, 
+                                        queryTrackingBehavior: TrackAll, 
+                                        structuralType: [LIFTABLE Constant: EntityType: CurrencyQuery | Resolver: namelessParameter{2} => namelessParameter{2}.Dependencies.Model.FindEntityType(\"ExchangeApi.Models.Entities.CurrencyQuery\")]) : default(void);
+                                    return instance;
+                                }}
+                        default: 
+                            default(CurrencyQuery)
+                    }
+                    ;
+                    entry1 = entityType1 == default(IEntityType) ? default(InternalEntityEntry) : queryContext.StartTracking(
+                        entityType: entityType1, 
+                        entity: instance1, 
+                        snapshot: shadowSnapshot1);
+                    return instance1;
+                } : default(void);
+                return instance1;
+            };
+            return entity;
+        }, 
+        contextType: ExchangeApi.Data.DbConnect, 
+        standAloneStateManager: False, 
+        detailedErrorsEnabled: False, 
+        threadSafetyChecksEnabled: True), 
+    cancellationToken: queryContext.CancellationToken)"' 
+ 2025-07-29 10:32:35 Creating DbConnection. 
+ 2025-07-29 10:32:35 Created DbConnection. (0ms). 
+ 2025-07-29 10:32:35 Opening connection to database '"ExchangeDbProd"' on server '"(localdb)\MSSQLLocalDB"'. 
+ 2025-07-29 10:32:35 Opened connection to database '"ExchangeDbProd"' on server '"(localdb)\MSSQLLocalDB"'. 
+ 2025-07-29 10:32:35 Creating DbCommand for '"ExecuteReader"'. 
+ 2025-07-29 10:32:35 Created DbCommand for '"ExecuteReader"' (0ms). 
+ 2025-07-29 10:32:35 Initialized DbCommand for '"ExecuteReader"' (0ms). 
+ 2025-07-29 10:32:35 Executing DbCommand [Parameters=["@__BaseCurrency_0='?' (Size = 3), @__TargetCurrency_1='?' (Size = 3)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [c].[Id], [c].[Base], [c].[Target]
+FROM [CurrencyQuery] AS [c]
+WHERE [c].[Base] = @__BaseCurrency_0 AND [c].[Target] = @__TargetCurrency_1" 
+ 2025-07-29 10:32:36 Executed DbCommand ("9"ms) [Parameters=["@__BaseCurrency_0='?' (Size = 3), @__TargetCurrency_1='?' (Size = 3)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [c].[Id], [c].[Base], [c].[Target]
+FROM [CurrencyQuery] AS [c]
+WHERE [c].[Base] = @__BaseCurrency_0 AND [c].[Target] = @__TargetCurrency_1" 
+ 2025-07-29 10:32:36 Context '"DbConnect"' started tracking '"CurrencyQuery"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values. 
+ 2025-07-29 10:32:36 Closing data reader to '"ExchangeDbProd"' on server '"(localdb)\MSSQLLocalDB"'. 
+ 2025-07-29 10:32:36 A data reader for '"ExchangeDbProd"' on server '"(localdb)\MSSQLLocalDB"' is being disposed after spending 41ms reading results. 
+ 2025-07-29 10:32:36 Closing connection to database '"ExchangeDbProd"' on server '"(localdb)\MSSQLLocalDB"'. 
+ 2025-07-29 10:32:36 Closed connection to database '"ExchangeDbProd"' on server '"(localdb)\MSSQLLocalDB"' (0ms). 
+ 2025-07-29 10:32:36 '"DbConnect"' generated a temporary value for the property '"ExchangeResult"."Id"'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values. 
+ 2025-07-29 10:32:36 Context '"DbConnect"' started tracking '"ExchangeResult"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values. 
+ 2025-07-29 10:32:36 SaveChanges starting for '"DbConnect"'. 
+ 2025-07-29 10:32:36 DetectChanges starting for '"DbConnect"'. 
+ 2025-07-29 10:32:36 DetectChanges completed for '"DbConnect"'. 
+ 2025-07-29 10:32:36 Opening connection to database '"ExchangeDbProd"' on server '"(localdb)\MSSQLLocalDB"'. 
+ 2025-07-29 10:32:36 Opened connection to database '"ExchangeDbProd"' on server '"(localdb)\MSSQLLocalDB"'. 
+ 2025-07-29 10:32:36 Creating DbCommand for '"ExecuteReader"'. 
+ 2025-07-29 10:32:36 Created DbCommand for '"ExecuteReader"' (0ms). 
+ 2025-07-29 10:32:36 Initialized DbCommand for '"ExecuteReader"' (0ms). 
+ 2025-07-29 10:32:36 Executing DbCommand [Parameters=["@p0='?' (DbType = Int32), @p1='?' (Precision = 18) (Scale = 6) (DbType = Decimal), @p2='?' (DbType = DateTime2)"], CommandType='Text', CommandTimeout='30']"
+""SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [ExchangeResult] ([CurrencyQueryId], [Rate], [TimeStamp])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2);" 
+ 2025-07-29 10:32:36 Executed DbCommand ("7"ms) [Parameters=["@p0='?' (DbType = Int32), @p1='?' (Precision = 18) (Scale = 6) (DbType = Decimal), @p2='?' (DbType = DateTime2)"], CommandType='Text', CommandTimeout='30']"
+""SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [ExchangeResult] ([CurrencyQueryId], [Rate], [TimeStamp])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2);" 
+ 2025-07-29 10:32:36 The foreign key property '"ExchangeResult"."Id"' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see property values. 
+ 2025-07-29 10:32:36 Closing data reader to '"ExchangeDbProd"' on server '"(localdb)\MSSQLLocalDB"'. 
+ 2025-07-29 10:32:36 A data reader for '"ExchangeDbProd"' on server '"(localdb)\MSSQLLocalDB"' is being disposed after spending 12ms reading results. 
+ 2025-07-29 10:32:36 Closing connection to database '"ExchangeDbProd"' on server '"(localdb)\MSSQLLocalDB"'. 
+ 2025-07-29 10:32:36 Closed connection to database '"ExchangeDbProd"' on server '"(localdb)\MSSQLLocalDB"' (0ms). 
+ 2025-07-29 10:32:36 An entity of type '"ExchangeResult"' tracked by '"DbConnect"' changed state from 'Added' to 'Unchanged'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values. 
+ 2025-07-29 10:32:36 SaveChanges completed for '"DbConnect"' with 1 entities written to the database. 
+ 2025-07-29 10:32:36 Exchange rate saved for "USD" to "AUD" at 07/29/2025 08:32:36 
+ 2025-07-29 10:32:36 List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter", "Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter", "Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter", "Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"] 
+ 2025-07-29 10:32:36 No information found on request to perform content negotiation. 
+ 2025-07-29 10:32:36 Attempting to select an output formatter without using a content type as no explicit content types were specified for the response. 
+ 2025-07-29 10:32:36 Attempting to select the first formatter in the output formatters list which can write the result. 
+ 2025-07-29 10:32:36 Selected output formatter '"Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"' and content type '"application/json"' to write the response. 
+ 2025-07-29 10:32:36 Executing "OkObjectResult", writing value of type '"ExchangeApi.Models.Entities.ExchangeResult"'. 
+ 2025-07-29 10:32:36 Executed action "ExchangeApi.Controllers.ExchangeController.GetExchangeRate (ExchangeApi)" in 716.5299ms 
+ 2025-07-29 10:32:36 Executed endpoint '"ExchangeApi.Controllers.ExchangeController.GetExchangeRate (ExchangeApi)"' 
+ 2025-07-29 10:32:36 '"DbConnect"' disposed. 
+ 2025-07-29 10:32:36 Disposing connection to database '"ExchangeDbProd"' on server '"(localdb)\MSSQLLocalDB"'. 
+ 2025-07-29 10:32:36 Disposed connection to database '""' on server '""' (0ms). 
+ 2025-07-29 10:32:36 Request finished "HTTP/2" "GET" "https"://"localhost:7010""""/api/exchange-rate""?BaseCurrency=usd&TargetCurrency=aud" - 200 null "application/json; charset=utf-8" 728.1789ms 
+ 2025-07-29 10:33:01 Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"] 
+ 2025-07-29 10:33:01 Hosting starting 
+ 2025-07-29 10:33:01 Middleware loaded 
+ 2025-07-29 10:33:01 Middleware loaded. Script "/_framework/aspnetcore-browser-refresh.js" ("16507" B). 
+ 2025-07-29 10:33:01 Middleware loaded. Script "/_framework/blazor-hotreload.js" ("799" B). 
+ 2025-07-29 10:33:01 Middleware loaded: DOTNET_MODIFIABLE_ASSEMBLIES="debug", __ASPNETCORE_BROWSER_TOOLS="true" 
+ 2025-07-29 10:33:02 Now listening on: "https://localhost:7010" 
+ 2025-07-29 10:33:02 Now listening on: "http://localhost:5206" 
+ 2025-07-29 10:33:02 Loaded hosting startup assembly "ExchangeApi" 
+ 2025-07-29 10:33:02 Loaded hosting startup assembly "Microsoft.WebTools.ApiEndpointDiscovery" 
+ 2025-07-29 10:33:02 Loaded hosting startup assembly "Microsoft.AspNetCore.Watch.BrowserRefresh" 
+ 2025-07-29 10:33:02 Loaded hosting startup assembly "Microsoft.WebTools.BrowserLink.Net" 
+ 2025-07-29 10:33:02 Application started. Press Ctrl+C to shut down. 
+ 2025-07-29 10:33:02 Hosting environment: "Production" 
+ 2025-07-29 10:33:02 Content root path: "C:\Users\bbalci\source\repos\ExchangeApi\ExchangeApi" 
+ 2025-07-29 10:33:02 Hosting started 
+ 2025-07-29 10:33:02 Connection id ""0HNEEFA42H4PD"" accepted. 
+ 2025-07-29 10:33:02 Connection id ""0HNEEFA42H4PD"" received FIN. 
+ 2025-07-29 10:33:02 Connection id ""0HNEEFA42H4PD"" started. 
+ 2025-07-29 10:33:02 Failed to authenticate HTTPS connection. 
+ System.IO.IOException: Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveHandshakeFrameAsync[TIOAdapter](CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](Boolean receiveFirst, Byte[] reAuthenticationData, CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ProcessAuthenticationWithTelemetryAsync(Boolean isAsync, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2025-07-29 10:33:02 Connection id ""0HNEEFA42H4PD"" stopped. 
+ 2025-07-29 10:33:02 Connection id ""0HNEEFA42H4PD"" sending FIN because: ""The Socket transport's send loop completed gracefully."" 
+ 2025-07-29 10:33:02 Connection id ""0HNEEFA42H4PE"" accepted. 
+ 2025-07-29 10:33:02 Connection id ""0HNEEFA42H4PE"" started. 
+ 2025-07-29 10:33:02 Connection "0HNEEFA42H4PE" established using the following protocol: Tls13 
+ 2025-07-29 10:33:02 Request starting "HTTP/2" "GET" "https"://"localhost:7010""""/""" - null null 
+ 2025-07-29 10:33:02 Wildcard detected, all requests with hosts will be allowed. 
+ 2025-07-29 10:33:02 No candidates found for the request path '"/"' 
+ 2025-07-29 10:33:02 Request did not match any endpoints 
+ 2025-07-29 10:33:02 The request path "" does not match the path filter 
+ 2025-07-29 10:33:02 Request finished "HTTP/2" "GET" "https"://"localhost:7010""""/""" - 404 0 null 149.0598ms 
+ 2025-07-29 10:33:03 Request reached the end of the middleware pipeline without being handled by application code. Request path: "GET" "https"://"localhost:7010""""/", Response status code: 404 
+ 2025-07-29 10:33:07 Request starting "HTTP/2" "GET" "https"://"localhost:7010""""/swagger/index.html""" - null null 
+ 2025-07-29 10:33:07 No candidates found for the request path '"/swagger/index.html"' 
+ 2025-07-29 10:33:07 Request did not match any endpoints 
+ 2025-07-29 10:33:07 Response markup is scheduled to include Browser Link script injection. 
+ 2025-07-29 10:33:07 Response markup is scheduled to include browser refresh script injection. 
+ 2025-07-29 10:33:07 Response markup was updated to include Browser Link script injection. 
+ 2025-07-29 10:33:07 Response markup was updated to include browser refresh script injection. 
+ 2025-07-29 10:33:07 Request finished "HTTP/2" "GET" "https"://"localhost:7010""""/swagger/index.html""" - 200 null "text/html;charset=utf-8" 62.5135ms 
+ 2025-07-29 10:33:07 Request starting "HTTP/2" "GET" "https"://"localhost:7010""""/swagger/index.js""" - null null 
+ 2025-07-29 10:33:07 No candidates found for the request path '"/swagger/index.js"' 
+ 2025-07-29 10:33:07 Request did not match any endpoints 
+ 2025-07-29 10:33:07 Request starting "HTTP/2" "GET" "https"://"localhost:7010""""/_framework/aspnetcore-browser-refresh.js""" - null null 
+ 2025-07-29 10:33:07 Request finished "HTTP/2" "GET" "https"://"localhost:7010""""/swagger/index.js""" - 200 null "application/javascript;charset=utf-8" 4.0867ms 
+ 2025-07-29 10:33:07 Request starting "HTTP/2" "GET" "https"://"localhost:7010""""/_vs/browserLink""" - null null 
+ 2025-07-29 10:33:07 Script injected: "/_framework/aspnetcore-browser-refresh.js" 
+ 2025-07-29 10:33:07 Request finished "HTTP/2" "GET" "https"://"localhost:7010""""/_framework/aspnetcore-browser-refresh.js""" - 200 16507 "application/javascript; charset=utf-8" 19.2831ms 
+ 2025-07-29 10:33:07 Request finished "HTTP/2" "GET" "https"://"localhost:7010""""/_vs/browserLink""" - 200 null "text/javascript; charset=UTF-8" 50.4781ms 
+ 2025-07-29 10:33:07 Request starting "HTTP/2" "GET" "https"://"localhost:7010""""/swagger/v1/swagger.json""" - null null 
+ 2025-07-29 10:33:07 No candidates found for the request path '"/swagger/v1/swagger.json"' 
+ 2025-07-29 10:33:07 Request did not match any endpoints 
+ 2025-07-29 10:33:07 Request finished "HTTP/2" "GET" "https"://"localhost:7010""""/swagger/v1/swagger.json""" - 200 null "application/json;charset=utf-8" 6.4255ms 
+ 2025-07-29 11:18:54 Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"] 
+ 2025-07-29 11:18:55 Hosting starting 
+ 2025-07-29 11:18:55 Middleware loaded 
+ 2025-07-29 11:18:55 Middleware loaded. Script "/_framework/aspnetcore-browser-refresh.js" ("16507" B). 
+ 2025-07-29 11:18:55 Middleware loaded. Script "/_framework/blazor-hotreload.js" ("799" B). 
+ 2025-07-29 11:18:55 Middleware loaded: DOTNET_MODIFIABLE_ASSEMBLIES="debug", __ASPNETCORE_BROWSER_TOOLS="true" 
+ 2025-07-29 11:18:55 Now listening on: "https://localhost:7010" 
+ 2025-07-29 11:18:55 Now listening on: "http://localhost:5206" 
+ 2025-07-29 11:18:55 Loaded hosting startup assembly "ExchangeApi" 
+ 2025-07-29 11:18:55 Loaded hosting startup assembly "Microsoft.WebTools.ApiEndpointDiscovery" 
+ 2025-07-29 11:18:55 Loaded hosting startup assembly "Microsoft.AspNetCore.Watch.BrowserRefresh" 
+ 2025-07-29 11:18:55 Loaded hosting startup assembly "Microsoft.WebTools.BrowserLink.Net" 
+ 2025-07-29 11:18:55 Connection id ""0HNEEG3OJHIQJ"" received FIN. 
+ 2025-07-29 11:18:55 Connection id ""0HNEEG3OJHIQJ"" accepted. 
+ 2025-07-29 11:18:55 Connection id ""0HNEEG3OJHIQJ"" started. 
+ 2025-07-29 11:18:55 Failed to authenticate HTTPS connection. 
+ System.IO.IOException: Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveHandshakeFrameAsync[TIOAdapter](CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](Boolean receiveFirst, Byte[] reAuthenticationData, CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ProcessAuthenticationWithTelemetryAsync(Boolean isAsync, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2025-07-29 11:18:55 Application started. Press Ctrl+C to shut down. 
+ 2025-07-29 11:18:55 Hosting environment: "Production" 
+ 2025-07-29 11:18:55 Content root path: "C:\Users\bbalci\source\repos\ExchangeApi\ExchangeApi" 
+ 2025-07-29 11:18:55 Hosting started 
+ 2025-07-29 11:18:55 Connection id ""0HNEEG3OJHIQJ"" stopped. 
+ 2025-07-29 11:18:55 Connection id ""0HNEEG3OJHIQJ"" sending FIN because: ""The Socket transport's send loop completed gracefully."" 
+ 2025-07-29 11:18:56 Connection id ""0HNEEG3OJHIQK"" accepted. 
+ 2025-07-29 11:18:56 Connection id ""0HNEEG3OJHIQK"" started. 
+ 2025-07-29 11:18:56 Connection "0HNEEG3OJHIQK" established using the following protocol: Tls13 
+ 2025-07-29 11:18:56 Request starting "HTTP/2" "GET" "https"://"localhost:7010""""/""" - null null 
+ 2025-07-29 11:18:56 Wildcard detected, all requests with hosts will be allowed. 
+ 2025-07-29 11:18:56 No candidates found for the request path '"/"' 
+ 2025-07-29 11:18:56 Request did not match any endpoints 
+ 2025-07-29 11:18:56 The request path "" does not match the path filter 
+ 2025-07-29 11:18:56 Request finished "HTTP/2" "GET" "https"://"localhost:7010""""/""" - 404 0 null 226.1749ms 
+ 2025-07-29 11:18:56 Request reached the end of the middleware pipeline without being handled by application code. Request path: "GET" "https"://"localhost:7010""""/", Response status code: 404 
+ 2025-07-29 11:18:58 Request starting "HTTP/2" "GET" "https"://"localhost:7010""""/swagger/index.html""" - null null 
+ 2025-07-29 11:18:58 No candidates found for the request path '"/swagger/index.html"' 
+ 2025-07-29 11:18:58 Request did not match any endpoints 
+ 2025-07-29 11:18:58 Response markup is scheduled to include Browser Link script injection. 
+ 2025-07-29 11:18:58 Response markup is scheduled to include browser refresh script injection. 
+ 2025-07-29 11:18:58 Response markup was updated to include Browser Link script injection. 
+ 2025-07-29 11:18:58 Response markup was updated to include browser refresh script injection. 
+ 2025-07-29 11:18:58 Request finished "HTTP/2" "GET" "https"://"localhost:7010""""/swagger/index.html""" - 200 null "text/html;charset=utf-8" 68.7809ms 
+ 2025-07-29 11:18:58 Request starting "HTTP/2" "GET" "https"://"localhost:7010""""/swagger/index.js""" - null null 
+ 2025-07-29 11:18:58 No candidates found for the request path '"/swagger/index.js"' 
+ 2025-07-29 11:18:58 Request did not match any endpoints 
+ 2025-07-29 11:18:58 Request starting "HTTP/2" "GET" "https"://"localhost:7010""""/_framework/aspnetcore-browser-refresh.js""" - null null 
+ 2025-07-29 11:18:58 Request starting "HTTP/2" "GET" "https"://"localhost:7010""""/_vs/browserLink""" - null null 
+ 2025-07-29 11:18:58 Request finished "HTTP/2" "GET" "https"://"localhost:7010""""/swagger/index.js""" - 200 null "application/javascript;charset=utf-8" 15.8113ms 
+ 2025-07-29 11:18:58 Script injected: "/_framework/aspnetcore-browser-refresh.js" 
+ 2025-07-29 11:18:58 Request finished "HTTP/2" "GET" "https"://"localhost:7010""""/_framework/aspnetcore-browser-refresh.js""" - 200 16507 "application/javascript; charset=utf-8" 41.0143ms 
+ 2025-07-29 11:18:58 Request finished "HTTP/2" "GET" "https"://"localhost:7010""""/_vs/browserLink""" - 200 null "text/javascript; charset=UTF-8" 78.4012ms 
+ 2025-07-29 11:18:58 Request starting "HTTP/2" "GET" "https"://"localhost:7010""""/swagger/v1/swagger.json""" - null null 
+ 2025-07-29 11:18:58 No candidates found for the request path '"/swagger/v1/swagger.json"' 
+ 2025-07-29 11:18:58 Request did not match any endpoints 
+ 2025-07-29 11:18:58 Request finished "HTTP/2" "GET" "https"://"localhost:7010""""/swagger/v1/swagger.json""" - 200 null "application/json;charset=utf-8" 11.1514ms 
+ 2025-07-29 11:19:07 Request starting "HTTP/2" "POST" "https"://"localhost:7010""""/api/addfav-queries""?BaseCurrency=usd&TargetCurrency=eur&Name=bade" - null 0 
+ 2025-07-29 11:19:07 1 candidate(s) found for the request path '"/api/addfav-queries"' 
+ 2025-07-29 11:19:07 Endpoint '"ExchangeApi.Controllers.ExchangeController.FavUsed (ExchangeApi)"' with route pattern '"api/addfav-queries"' is valid for the request path '"/api/addfav-queries"' 
+ 2025-07-29 11:19:07 Request matched endpoint '"ExchangeApi.Controllers.ExchangeController.FavUsed (ExchangeApi)"' 
+ 2025-07-29 11:19:07 Static files was skipped as the request already matched an endpoint. 
+ 2025-07-29 11:19:07 Executing endpoint '"ExchangeApi.Controllers.ExchangeController.FavUsed (ExchangeApi)"' 
+ 2025-07-29 11:19:07 Route matched with "{action = \"FavUsed\", controller = \"Exchange\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] FavUsed(System.String, System.String, System.String)" on controller "ExchangeApi.Controllers.ExchangeController" ("ExchangeApi"). 
+ 2025-07-29 11:19:07 Execution plan of "authorization" filters (in the following order): ["None"] 
+ 2025-07-29 11:19:07 Execution plan of "resource" filters (in the following order): ["None"] 
+ 2025-07-29 11:19:07 Execution plan of "action" filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)", "Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"] 
+ 2025-07-29 11:19:07 Execution plan of "exception" filters (in the following order): ["None"] 
+ 2025-07-29 11:19:07 Execution plan of "result" filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"] 
+ 2025-07-29 11:19:07 Executing controller factory for controller "ExchangeApi.Controllers.ExchangeController" ("ExchangeApi") 
+ 2025-07-29 11:19:07 An 'IServiceProvider' was created for internal use by Entity Framework. 
+ 2025-07-29 11:19:07 Executed controller factory for controller "ExchangeApi.Controllers.ExchangeController" ("ExchangeApi") 
+ 2025-07-29 11:19:07 Attempting to bind parameter '"BaseCurrency"' of type '"System.String"' ... 
+ 2025-07-29 11:19:07 Attempting to bind parameter '"BaseCurrency"' of type '"System.String"' using the name '"BaseCurrency"' in request data ... 
+ 2025-07-29 11:19:07 Done attempting to bind parameter '"BaseCurrency"' of type '"System.String"'. 
+ 2025-07-29 11:19:07 Done attempting to bind parameter '"BaseCurrency"' of type '"System.String"'. 
+ 2025-07-29 11:19:07 Attempting to validate the bound parameter '"BaseCurrency"' of type '"System.String"' ... 
+ 2025-07-29 11:19:07 Done attempting to validate the bound parameter '"BaseCurrency"' of type '"System.String"'. 
+ 2025-07-29 11:19:07 Attempting to bind parameter '"TargetCurrency"' of type '"System.String"' ... 
+ 2025-07-29 11:19:07 Attempting to bind parameter '"TargetCurrency"' of type '"System.String"' using the name '"TargetCurrency"' in request data ... 
+ 2025-07-29 11:19:07 Done attempting to bind parameter '"TargetCurrency"' of type '"System.String"'. 
+ 2025-07-29 11:19:07 Done attempting to bind parameter '"TargetCurrency"' of type '"System.String"'. 
+ 2025-07-29 11:19:07 Attempting to validate the bound parameter '"TargetCurrency"' of type '"System.String"' ... 
+ 2025-07-29 11:19:07 Done attempting to validate the bound parameter '"TargetCurrency"' of type '"System.String"'. 
+ 2025-07-29 11:19:07 Attempting to bind parameter '"Name"' of type '"System.String"' ... 
+ 2025-07-29 11:19:07 Attempting to bind parameter '"Name"' of type '"System.String"' using the name '"Name"' in request data ... 
+ 2025-07-29 11:19:07 Done attempting to bind parameter '"Name"' of type '"System.String"'. 
+ 2025-07-29 11:19:07 Done attempting to bind parameter '"Name"' of type '"System.String"'. 
+ 2025-07-29 11:19:07 Attempting to validate the bound parameter '"Name"' of type '"System.String"' ... 
+ 2025-07-29 11:19:07 Done attempting to validate the bound parameter '"Name"' of type '"System.String"'. 
+ 2025-07-29 11:19:07 Start processing HTTP request "GET" "https://api.exchangerate.host/convert?access_key=1d5676c36d2508bed228dbfa2d1e5527&from=USD&to=EUR&amount=1" 
+ 2025-07-29 11:19:07 Sending HTTP request "GET" "https://api.exchangerate.host/convert?access_key=1d5676c36d2508bed228dbfa2d1e5527&from=USD&to=EUR&amount=1" 
+ 2025-07-29 11:19:08 Received HTTP response headers after 555.4025ms - 200 
+ 2025-07-29 11:19:08 End processing HTTP request after 561.4091ms - 200 
+ 2025-07-29 11:19:09 Entity Framework Core "9.0.7" initialized '"DbConnect"' using provider '"Microsoft.EntityFrameworkCore.SqlServer":"9.0.7"' with options: "EngineType=SqlServer " 
+ 2025-07-29 11:19:09 Compiling query expression: "
+"'"DbSet<FavoriteQueries>()
+    .FirstOrDefault(q => q.Base == __BaseCurrency_0 && q.Target == __TargetCurrency_1 && q.Name == __Name_2)"' 
+ 2025-07-29 11:19:09 Generated query execution expression: "
+"'"queryContext => ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync<FavoriteQueries>(
+    asyncEnumerable: SingleQueryingEnumerable.Create<FavoriteQueries>(
+        relationalQueryContext: (RelationalQueryContext)queryContext, 
+        relationalCommandResolver: parameters => [LIFTABLE Constant: RelationalCommandCache.QueryExpression(
+            Projection Mapping:
+                EmptyProjectionMember -> Dictionary<IProperty, int> { [Property: FavoriteQueries.Id (int) Required PK AfterSave:Throw ValueGenerated.OnAdd, 0], [Property: FavoriteQueries.Base (string) Required MaxLength(3), 1], [Property: FavoriteQueries.Name (string) Required MaxLength(50), 2], [Property: FavoriteQueries.Rate (decimal) Required, 3], [Property: FavoriteQueries.Target (string) Required MaxLength(3), 4] }
+            SELECT TOP(1) f.Id, f.Base, f.Name, f.Rate, f.Target
+            FROM FavoriteQueries AS f
+            WHERE ((f.Base == @__BaseCurrency_0) && (f.Target == @__TargetCurrency_1)) && (f.Name == @__Name_2)) | Resolver: c => new RelationalCommandCache(
+            c.Dependencies.MemoryCache, 
+            c.RelationalDependencies.QuerySqlGeneratorFactory, 
+            c.RelationalDependencies.RelationalParameterBasedSqlProcessorFactory, 
+            Projection Mapping:
+                EmptyProjectionMember -> Dictionary<IProperty, int> { [Property: FavoriteQueries.Id (int) Required PK AfterSave:Throw ValueGenerated.OnAdd, 0], [Property: FavoriteQueries.Base (string) Required MaxLength(3), 1], [Property: FavoriteQueries.Name (string) Required MaxLength(50), 2], [Property: FavoriteQueries.Rate (decimal) Required, 3], [Property: FavoriteQueries.Target (string) Required MaxLength(3), 4] }
+            SELECT TOP(1) f.Id, f.Base, f.Name, f.Rate, f.Target
+            FROM FavoriteQueries AS f
+            WHERE ((f.Base == @__BaseCurrency_0) && (f.Target == @__TargetCurrency_1)) && (f.Name == @__Name_2), 
+            False, 
+            new HashSet<string>(
+                new string[]{ }, 
+                StringComparer.Ordinal
+            )
+        )].GetRelationalCommandTemplate(parameters), 
+        readerColumns: null, 
+        shaper: (queryContext, dataReader, resultContext, resultCoordinator) => 
+        {
+            FavoriteQueries entity;
+            entity = 
+            {
+                MaterializationContext materializationContext1;
+                IEntityType entityType1;
+                FavoriteQueries instance1;
+                InternalEntityEntry entry1;
+                bool hasNullKey1;
+                materializationContext1 = new MaterializationContext(
+                    [LIFTABLE Constant: ValueBuffer | Resolver: _ => (object)ValueBuffer.Empty], 
+                    queryContext.Context
+                );
+                instance1 = default(FavoriteQueries);
+                entry1 = queryContext.TryGetEntry(
+                    key: [LIFTABLE Constant: Key: FavoriteQueries.Id PK | Resolver: c => c.Dependencies.Model.FindEntityType(\"ExchangeApi.Models.Entities.FavoriteQueries\").FindPrimaryKey()], 
+                    keyValues: new object[]{ (object)dataReader.GetInt32(0) }, 
+                    throwOnNullKey: True, 
+                    hasNullKey: hasNullKey1);
+                !(hasNullKey1) ? entry1 != default(InternalEntityEntry) ? 
+                {
+                    entityType1 = entry1.EntityType;
+                    return instance1 = (FavoriteQueries)entry1.Entity;
+                } : 
+                {
+                    ISnapshot shadowSnapshot1;
+                    shadowSnapshot1 = [LIFTABLE Constant: Snapshot | Resolver: _ => Snapshot.Empty];
+                    entityType1 = [LIFTABLE Constant: EntityType: FavoriteQueries | Resolver: namelessParameter{0} => namelessParameter{0}.Dependencies.Model.FindEntityType(\"ExchangeApi.Models.Entities.FavoriteQueries\")];
+                    instance1 = switch (entityType1)
+                    {
+                        case [LIFTABLE Constant: EntityType: FavoriteQueries | Resolver: namelessParameter{1} => namelessParameter{1}.Dependencies.Model.FindEntityType(\"ExchangeApi.Models.Entities.FavoriteQueries\")]: 
+                            {
+                                return 
+                                {
+                                    FavoriteQueries instance;
+                                    instance = new FavoriteQueries();
+                                    instance.<Id>k__BackingField = dataReader.GetInt32(0);
+                                    instance.<Base>k__BackingField = dataReader.GetString(1);
+                                    instance.<Name>k__BackingField = dataReader.GetString(2);
+                                    instance.<Rate>k__BackingField = dataReader.GetDecimal(3);
+                                    instance.<Target>k__BackingField = dataReader.GetString(4);
+                                    (instance is IInjectableService) ? ((IInjectableService)instance).Injected(
+                                        context: materializationContext1.Context, 
+                                        entity: instance, 
+                                        queryTrackingBehavior: TrackAll, 
+                                        structuralType: [LIFTABLE Constant: EntityType: FavoriteQueries | Resolver: namelessParameter{2} => namelessParameter{2}.Dependencies.Model.FindEntityType(\"ExchangeApi.Models.Entities.FavoriteQueries\")]) : default(void);
+                                    return instance;
+                                }}
+                        default: 
+                            default(FavoriteQueries)
+                    }
+                    ;
+                    entry1 = entityType1 == default(IEntityType) ? default(InternalEntityEntry) : queryContext.StartTracking(
+                        entityType: entityType1, 
+                        entity: instance1, 
+                        snapshot: shadowSnapshot1);
+                    return instance1;
+                } : default(void);
+                return instance1;
+            };
+            return entity;
+        }, 
+        contextType: ExchangeApi.Data.DbConnect, 
+        standAloneStateManager: False, 
+        detailedErrorsEnabled: False, 
+        threadSafetyChecksEnabled: True), 
+    cancellationToken: queryContext.CancellationToken)"' 
+ 2025-07-29 11:19:09 Creating DbConnection. 
+ 2025-07-29 11:19:09 Created DbConnection. (23ms). 
+ 2025-07-29 11:19:09 Opening connection to database '"ExchangeDbProd"' on server '"(localdb)\MSSQLLocalDB"'. 
+ 2025-07-29 11:19:09 Opened connection to database '"ExchangeDbProd"' on server '"(localdb)\MSSQLLocalDB"'. 
+ 2025-07-29 11:19:09 Creating DbCommand for '"ExecuteReader"'. 
+ 2025-07-29 11:19:09 Created DbCommand for '"ExecuteReader"' (3ms). 
+ 2025-07-29 11:19:09 Initialized DbCommand for '"ExecuteReader"' (13ms). 
+ 2025-07-29 11:19:09 Executing DbCommand [Parameters=["@__BaseCurrency_0='?' (Size = 3), @__TargetCurrency_1='?' (Size = 3), @__Name_2='?' (Size = 50)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [f].[Id], [f].[Base], [f].[Name], [f].[Rate], [f].[Target]
+FROM [FavoriteQueries] AS [f]
+WHERE [f].[Base] = @__BaseCurrency_0 AND [f].[Target] = @__TargetCurrency_1 AND [f].[Name] = @__Name_2" 
+ 2025-07-29 11:19:09 Executed DbCommand ("58"ms) [Parameters=["@__BaseCurrency_0='?' (Size = 3), @__TargetCurrency_1='?' (Size = 3), @__Name_2='?' (Size = 50)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [f].[Id], [f].[Base], [f].[Name], [f].[Rate], [f].[Target]
+FROM [FavoriteQueries] AS [f]
+WHERE [f].[Base] = @__BaseCurrency_0 AND [f].[Target] = @__TargetCurrency_1 AND [f].[Name] = @__Name_2" 
+ 2025-07-29 11:19:09 Closing data reader to '"ExchangeDbProd"' on server '"(localdb)\MSSQLLocalDB"'. 
+ 2025-07-29 11:19:09 A data reader for '"ExchangeDbProd"' on server '"(localdb)\MSSQLLocalDB"' is being disposed after spending 8ms reading results. 
+ 2025-07-29 11:19:09 Closing connection to database '"ExchangeDbProd"' on server '"(localdb)\MSSQLLocalDB"'. 
+ 2025-07-29 11:19:09 Closed connection to database '"ExchangeDbProd"' on server '"(localdb)\MSSQLLocalDB"' (3ms). 
+ 2025-07-29 11:19:09 '"DbConnect"' generated a temporary value for the property '"FavoriteQueries"."Id"'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values. 
+ 2025-07-29 11:19:09 Context '"DbConnect"' started tracking '"FavoriteQueries"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values. 
+ 2025-07-29 11:19:09 SaveChanges starting for '"DbConnect"'. 
+ 2025-07-29 11:19:09 DetectChanges starting for '"DbConnect"'. 
+ 2025-07-29 11:19:09 DetectChanges completed for '"DbConnect"'. 
+ 2025-07-29 11:19:09 Opening connection to database '"ExchangeDbProd"' on server '"(localdb)\MSSQLLocalDB"'. 
+ 2025-07-29 11:19:09 Opened connection to database '"ExchangeDbProd"' on server '"(localdb)\MSSQLLocalDB"'. 
+ 2025-07-29 11:19:09 Creating DbCommand for '"ExecuteReader"'. 
+ 2025-07-29 11:19:09 Created DbCommand for '"ExecuteReader"' (0ms). 
+ 2025-07-29 11:19:09 Initialized DbCommand for '"ExecuteReader"' (0ms). 
+ 2025-07-29 11:19:09 Executing DbCommand [Parameters=["@p0='?' (Size = 3), @p1='?' (Size = 50), @p2='?' (Precision = 18) (Scale = 6) (DbType = Decimal), @p3='?' (Size = 3)"], CommandType='Text', CommandTimeout='30']"
+""SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [FavoriteQueries] ([Base], [Name], [Rate], [Target])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2, @p3);" 
+ 2025-07-29 11:19:09 Executed DbCommand ("6"ms) [Parameters=["@p0='?' (Size = 3), @p1='?' (Size = 50), @p2='?' (Precision = 18) (Scale = 6) (DbType = Decimal), @p3='?' (Size = 3)"], CommandType='Text', CommandTimeout='30']"
+""SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [FavoriteQueries] ([Base], [Name], [Rate], [Target])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2, @p3);" 
+ 2025-07-29 11:19:09 The foreign key property '"FavoriteQueries"."Id"' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see property values. 
+ 2025-07-29 11:19:09 Closing data reader to '"ExchangeDbProd"' on server '"(localdb)\MSSQLLocalDB"'. 
+ 2025-07-29 11:19:09 A data reader for '"ExchangeDbProd"' on server '"(localdb)\MSSQLLocalDB"' is being disposed after spending 14ms reading results. 
+ 2025-07-29 11:19:09 Closing connection to database '"ExchangeDbProd"' on server '"(localdb)\MSSQLLocalDB"'. 
+ 2025-07-29 11:19:09 Closed connection to database '"ExchangeDbProd"' on server '"(localdb)\MSSQLLocalDB"' (0ms). 
+ 2025-07-29 11:19:09 An entity of type '"FavoriteQueries"' tracked by '"DbConnect"' changed state from 'Added' to 'Unchanged'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values. 
+ 2025-07-29 11:19:09 SaveChanges completed for '"DbConnect"' with 1 entities written to the database. 
+ 2025-07-29 11:19:09 New favorite query created for "USD" to "EUR" with name "BADE" 
+ 2025-07-29 11:19:09 List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter", "Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter", "Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter", "Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"] 
+ 2025-07-29 11:19:09 No information found on request to perform content negotiation. 
+ 2025-07-29 11:19:09 Attempting to select an output formatter without using a content type as no explicit content types were specified for the response. 
+ 2025-07-29 11:19:09 Attempting to select the first formatter in the output formatters list which can write the result. 
+ 2025-07-29 11:19:09 Selected output formatter '"Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"' and content type '"application/json"' to write the response. 
+ 2025-07-29 11:19:09 Executing "OkObjectResult", writing value of type '"ExchangeApi.Models.Entities.FavoriteQueries"'. 
+ 2025-07-29 11:19:09 Executed action "ExchangeApi.Controllers.ExchangeController.FavUsed (ExchangeApi)" in 2381.3807ms 
+ 2025-07-29 11:19:09 Executed endpoint '"ExchangeApi.Controllers.ExchangeController.FavUsed (ExchangeApi)"' 
+ 2025-07-29 11:19:09 '"DbConnect"' disposed. 
+ 2025-07-29 11:19:09 Disposing connection to database '"ExchangeDbProd"' on server '"(localdb)\MSSQLLocalDB"'. 
+ 2025-07-29 11:19:09 Disposed connection to database '""' on server '""' (0ms). 
+ 2025-07-29 11:19:09 Request finished "HTTP/2" "POST" "https"://"localhost:7010""""/api/addfav-queries""?BaseCurrency=usd&TargetCurrency=eur&Name=bade" - 200 null "application/json; charset=utf-8" 2441.9973ms 
+ 2025-07-29 14:21:12 Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"] 
+ 2025-07-29 14:21:12 Hosting starting 
+ 2025-07-29 14:21:12 Middleware loaded 
+ 2025-07-29 14:21:12 Middleware loaded. Script "/_framework/aspnetcore-browser-refresh.js" ("16507" B). 
+ 2025-07-29 14:21:12 Middleware loaded. Script "/_framework/blazor-hotreload.js" ("799" B). 
+ 2025-07-29 14:21:13 Middleware loaded: DOTNET_MODIFIABLE_ASSEMBLIES="debug", __ASPNETCORE_BROWSER_TOOLS="true" 
+ 2025-07-29 14:21:13 Now listening on: "https://localhost:7010" 
+ 2025-07-29 14:21:13 Now listening on: "http://localhost:5206" 
+ 2025-07-29 14:21:13 Loaded hosting startup assembly "ExchangeApi" 
+ 2025-07-29 14:21:13 Loaded hosting startup assembly "Microsoft.WebTools.ApiEndpointDiscovery" 
+ 2025-07-29 14:21:13 Loaded hosting startup assembly "Microsoft.AspNetCore.Watch.BrowserRefresh" 
+ 2025-07-29 14:21:13 Loaded hosting startup assembly "Microsoft.WebTools.BrowserLink.Net" 
+ 2025-07-29 14:21:13 Application started. Press Ctrl+C to shut down. 
+ 2025-07-29 14:21:13 Hosting environment: "Production" 
+ 2025-07-29 14:21:13 Content root path: "C:\Users\bbalci\source\repos\ExchangeApi\ExchangeApi" 
+ 2025-07-29 14:21:13 Connection id ""0HNEEJ9KCKO9F"" received FIN. 
+ 2025-07-29 14:21:13 Hosting started 
+ 2025-07-29 14:21:13 Connection id ""0HNEEJ9KCKO9F"" accepted. 
+ 2025-07-29 14:21:13 Connection id ""0HNEEJ9KCKO9F"" started. 
+ 2025-07-29 14:21:13 Failed to authenticate HTTPS connection. 
+ System.IO.IOException: Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveHandshakeFrameAsync[TIOAdapter](CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](Boolean receiveFirst, Byte[] reAuthenticationData, CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ProcessAuthenticationWithTelemetryAsync(Boolean isAsync, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2025-07-29 14:21:13 Connection id ""0HNEEJ9KCKO9F"" stopped. 
+ 2025-07-29 14:21:13 Connection id ""0HNEEJ9KCKO9F"" sending FIN because: ""The Socket transport's send loop completed gracefully."" 
+ 2025-07-29 14:21:16 Connection id ""0HNEEJ9KCKO9G"" accepted. 
+ 2025-07-29 14:21:16 Connection id ""0HNEEJ9KCKO9G"" started. 
+ 2025-07-29 14:21:16 Connection "0HNEEJ9KCKO9G" established using the following protocol: Tls13 
+ 2025-07-29 14:21:16 Request starting "HTTP/2" "GET" "https"://"localhost:7010""""/""" - null null 
+ 2025-07-29 14:21:16 Wildcard detected, all requests with hosts will be allowed. 
+ 2025-07-29 14:21:16 No candidates found for the request path '"/"' 
+ 2025-07-29 14:21:16 Request did not match any endpoints 
+ 2025-07-29 14:21:16 The request path "" does not match the path filter 
+ 2025-07-29 14:21:16 Request finished "HTTP/2" "GET" "https"://"localhost:7010""""/""" - 404 0 null 484.5735ms 
+ 2025-07-29 14:21:16 Request reached the end of the middleware pipeline without being handled by application code. Request path: "GET" "https"://"localhost:7010""""/", Response status code: 404 
+ 2025-07-29 14:21:18 Request starting "HTTP/2" "GET" "https"://"localhost:7010""""/swagger/index.html""" - null null 
+ 2025-07-29 14:21:18 No candidates found for the request path '"/swagger/index.html"' 
+ 2025-07-29 14:21:18 Request did not match any endpoints 
+ 2025-07-29 14:21:18 Response markup is scheduled to include Browser Link script injection. 
+ 2025-07-29 14:21:18 Response markup is scheduled to include browser refresh script injection. 
+ 2025-07-29 14:21:18 Response markup was updated to include Browser Link script injection. 
+ 2025-07-29 14:21:18 Response markup was updated to include browser refresh script injection. 
+ 2025-07-29 14:21:18 Request finished "HTTP/2" "GET" "https"://"localhost:7010""""/swagger/index.html""" - 200 null "text/html;charset=utf-8" 81.024ms 
+ 2025-07-29 14:21:18 Request starting "HTTP/2" "GET" "https"://"localhost:7010""""/swagger/index.js""" - null null 
+ 2025-07-29 14:21:18 Request starting "HTTP/2" "GET" "https"://"localhost:7010""""/_framework/aspnetcore-browser-refresh.js""" - null null 
+ 2025-07-29 14:21:18 No candidates found for the request path '"/swagger/index.js"' 
+ 2025-07-29 14:21:18 Request did not match any endpoints 
+ 2025-07-29 14:21:18 Request finished "HTTP/2" "GET" "https"://"localhost:7010""""/swagger/index.js""" - 200 null "application/javascript;charset=utf-8" 4.5888ms 
+ 2025-07-29 14:21:18 Script injected: "/_framework/aspnetcore-browser-refresh.js" 
+ 2025-07-29 14:21:18 Request finished "HTTP/2" "GET" "https"://"localhost:7010""""/_framework/aspnetcore-browser-refresh.js""" - 200 16507 "application/javascript; charset=utf-8" 14.2464ms 
+ 2025-07-29 14:21:18 Request starting "HTTP/2" "GET" "https"://"localhost:7010""""/_vs/browserLink""" - null null 
+ 2025-07-29 14:21:18 Request finished "HTTP/2" "GET" "https"://"localhost:7010""""/_vs/browserLink""" - 200 null "text/javascript; charset=UTF-8" 252.8326ms 
+ 2025-07-29 14:21:18 Request starting "HTTP/2" "GET" "https"://"localhost:7010""""/swagger/v1/swagger.json""" - null null 
+ 2025-07-29 14:21:18 No candidates found for the request path '"/swagger/v1/swagger.json"' 
+ 2025-07-29 14:21:18 Request did not match any endpoints 
+ 2025-07-29 14:21:18 Request finished "HTTP/2" "GET" "https"://"localhost:7010""""/swagger/v1/swagger.json""" - 200 null "application/json;charset=utf-8" 14.1288ms 
+ 

@@ -1,0 +1,439 @@
+2025-07-30 13:04:08 Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"] 
+ 2025-07-30 13:04:08 Hosting starting 
+ 2025-07-30 13:04:08 Middleware loaded 
+ 2025-07-30 13:04:08 Middleware loaded. Script "/_framework/aspnetcore-browser-refresh.js" ("16507" B). 
+ 2025-07-30 13:04:08 Middleware loaded. Script "/_framework/blazor-hotreload.js" ("799" B). 
+ 2025-07-30 13:04:08 Middleware loaded: DOTNET_MODIFIABLE_ASSEMBLIES="debug", __ASPNETCORE_BROWSER_TOOLS="true" 
+ 2025-07-30 13:04:08 Now listening on: "https://localhost:7010" 
+ 2025-07-30 13:04:08 Now listening on: "http://localhost:5206" 
+ 2025-07-30 13:04:08 Loaded hosting startup assembly "ExchangeApi" 
+ 2025-07-30 13:04:08 Loaded hosting startup assembly "Microsoft.WebTools.ApiEndpointDiscovery" 
+ 2025-07-30 13:04:08 Loaded hosting startup assembly "Microsoft.AspNetCore.Watch.BrowserRefresh" 
+ 2025-07-30 13:04:08 Loaded hosting startup assembly "Microsoft.WebTools.BrowserLink.Net" 
+ 2025-07-30 13:04:08 Connection id ""0HNEFB37BH7CG"" received FIN. 
+ 2025-07-30 13:04:08 Connection id ""0HNEFB37BH7CG"" accepted. 
+ 2025-07-30 13:04:08 Connection id ""0HNEFB37BH7CG"" started. 
+ 2025-07-30 13:04:08 Application started. Press Ctrl+C to shut down. 
+ 2025-07-30 13:04:08 Hosting environment: "Production" 
+ 2025-07-30 13:04:08 Content root path: "C:\Users\bbalci\source\repos\ExchangeApi\ExchangeApi" 
+ 2025-07-30 13:04:08 Hosting started 
+ 2025-07-30 13:04:08 Failed to authenticate HTTPS connection. 
+ System.IO.IOException: Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveHandshakeFrameAsync[TIOAdapter](CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](Boolean receiveFirst, Byte[] reAuthenticationData, CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ProcessAuthenticationWithTelemetryAsync(Boolean isAsync, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2025-07-30 13:04:08 Connection id ""0HNEFB37BH7CG"" stopped. 
+ 2025-07-30 13:04:08 Connection id ""0HNEFB37BH7CG"" sending FIN because: ""The Socket transport's send loop completed gracefully."" 
+ 2025-07-30 13:04:09 Connection id ""0HNEFB37BH7CH"" accepted. 
+ 2025-07-30 13:04:09 Connection id ""0HNEFB37BH7CH"" started. 
+ 2025-07-30 13:04:09 Connection "0HNEFB37BH7CH" established using the following protocol: Tls13 
+ 2025-07-30 13:04:09 Request starting "HTTP/2" "GET" "https"://"localhost:7010""""/""" - null null 
+ 2025-07-30 13:04:09 Wildcard detected, all requests with hosts will be allowed. 
+ 2025-07-30 13:04:09 No candidates found for the request path '"/"' 
+ 2025-07-30 13:04:09 Request did not match any endpoints 
+ 2025-07-30 13:04:09 The request path "" does not match the path filter 
+ 2025-07-30 13:04:09 Request finished "HTTP/2" "GET" "https"://"localhost:7010""""/""" - 404 0 null 256.1532ms 
+ 2025-07-30 13:04:09 Request reached the end of the middleware pipeline without being handled by application code. Request path: "GET" "https"://"localhost:7010""""/", Response status code: 404 
+ 2025-07-30 14:37:38 Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"] 
+ 2025-07-30 14:37:38 Hosting starting 
+ 2025-07-30 14:37:38 User profile is available. Using '"C:\Users\bbalci\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest. 
+ 2025-07-30 14:37:38 Reading data from file '"C:\Users\bbalci\AppData\Local\ASP.NET\DataProtection-Keys\key-40f597be-5c65-4e72-ba54-d4d054a12c90.xml"'. 
+ 2025-07-30 14:37:38 Found key {40f597be-5c65-4e72-ba54-d4d054a12c90}. 
+ 2025-07-30 14:37:38 Considering key {40f597be-5c65-4e72-ba54-d4d054a12c90} with expiration date 2025-10-13 08:59:52Z as default key. 
+ 2025-07-30 14:37:38 Forwarded activator type request from "Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Version=8.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60" to "Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60" 
+ 2025-07-30 14:37:38 Decrypting secret element using Windows DPAPI. 
+ 2025-07-30 14:37:38 Forwarded activator type request from "Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=8.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60" to "Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60" 
+ 2025-07-30 14:37:38 Opening CNG algorithm '"AES"' from provider 'null' with chaining mode CBC. 
+ 2025-07-30 14:37:38 Opening CNG algorithm '"SHA256"' from provider 'null' with HMAC. 
+ 2025-07-30 14:37:38 Using key {40f597be-5c65-4e72-ba54-d4d054a12c90} as the default key. 
+ 2025-07-30 14:37:38 Key ring with default key {40f597be-5c65-4e72-ba54-d4d054a12c90} was loaded during application startup. 
+ 2025-07-30 14:37:38 Middleware loaded 
+ 2025-07-30 14:37:38 Middleware loaded. Script "/_framework/aspnetcore-browser-refresh.js" ("16507" B). 
+ 2025-07-30 14:37:38 Middleware loaded. Script "/_framework/blazor-hotreload.js" ("799" B). 
+ 2025-07-30 14:37:38 Middleware loaded: DOTNET_MODIFIABLE_ASSEMBLIES="debug", __ASPNETCORE_BROWSER_TOOLS="true" 
+ 2025-07-30 14:37:38 Now listening on: "https://localhost:7010" 
+ 2025-07-30 14:37:38 Now listening on: "http://localhost:5206" 
+ 2025-07-30 14:37:38 Loaded hosting startup assembly "ExchangeApi" 
+ 2025-07-30 14:37:38 Loaded hosting startup assembly "Microsoft.WebTools.ApiEndpointDiscovery" 
+ 2025-07-30 14:37:38 Loaded hosting startup assembly "Microsoft.AspNetCore.Watch.BrowserRefresh" 
+ 2025-07-30 14:37:38 Loaded hosting startup assembly "Microsoft.WebTools.BrowserLink.Net" 
+ 2025-07-30 14:37:38 Connection id ""0HNEFCNF7PLEL"" received FIN. 
+ 2025-07-30 14:37:38 Connection id ""0HNEFCNF7PLEL"" accepted. 
+ 2025-07-30 14:37:38 Connection id ""0HNEFCNF7PLEL"" started. 
+ 2025-07-30 14:37:38 Application started. Press Ctrl+C to shut down. 
+ 2025-07-30 14:37:38 Hosting environment: "Production" 
+ 2025-07-30 14:37:38 Content root path: "C:\Users\bbalci\source\repos\ExchangeApi\ExchangeApi" 
+ 2025-07-30 14:37:38 Hosting started 
+ 2025-07-30 14:37:38 Failed to authenticate HTTPS connection. 
+ System.IO.IOException: Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveHandshakeFrameAsync[TIOAdapter](CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](Boolean receiveFirst, Byte[] reAuthenticationData, CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ProcessAuthenticationWithTelemetryAsync(Boolean isAsync, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2025-07-30 14:37:38 Connection id ""0HNEFCNF7PLEL"" stopped. 
+ 2025-07-30 14:37:38 Connection id ""0HNEFCNF7PLEL"" sending FIN because: ""The Socket transport's send loop completed gracefully."" 
+ 2025-07-30 14:37:39 Connection id ""0HNEFCNF7PLEM"" accepted. 
+ 2025-07-30 14:37:39 Connection id ""0HNEFCNF7PLEM"" started. 
+ 2025-07-30 14:37:39 Connection "0HNEFCNF7PLEM" established using the following protocol: Tls13 
+ 2025-07-30 14:37:39 Request starting "HTTP/2" "GET" "https"://"localhost:7010""""/""" - null null 
+ 2025-07-30 14:37:39 Wildcard detected, all requests with hosts will be allowed. 
+ 2025-07-30 14:37:39 No candidates found for the request path '"/"' 
+ 2025-07-30 14:37:39 Request did not match any endpoints 
+ 2025-07-30 14:37:39 The request path "" does not match the path filter 
+ 2025-07-30 14:37:39 AuthenticationScheme: "Bearer" was not authenticated. 
+ 2025-07-30 14:37:39 Request finished "HTTP/2" "GET" "https"://"localhost:7010""""/""" - 404 0 null 269.1864ms 
+ 2025-07-30 14:37:39 Request reached the end of the middleware pipeline without being handled by application code. Request path: "GET" "https"://"localhost:7010""""/", Response status code: 404 
+ 2025-07-30 14:37:45 Request starting "HTTP/2" "GET" "https"://"localhost:7010""""/""" - null null 
+ 2025-07-30 14:37:45 No candidates found for the request path '"/"' 
+ 2025-07-30 14:37:45 Request did not match any endpoints 
+ 2025-07-30 14:37:45 The request path "" does not match the path filter 
+ 2025-07-30 14:37:45 AuthenticationScheme: "Bearer" was not authenticated. 
+ 2025-07-30 14:37:45 Request finished "HTTP/2" "GET" "https"://"localhost:7010""""/""" - 404 0 null 9.2199ms 
+ 2025-07-30 14:37:45 Request reached the end of the middleware pipeline without being handled by application code. Request path: "GET" "https"://"localhost:7010""""/", Response status code: 404 
+ 2025-07-30 14:37:47 Request starting "HTTP/2" "GET" "https"://"localhost:7010""""/swagger/index.html""" - null null 
+ 2025-07-30 14:37:47 No candidates found for the request path '"/swagger/index.html"' 
+ 2025-07-30 14:37:47 Request did not match any endpoints 
+ 2025-07-30 14:37:48 Response markup is scheduled to include Browser Link script injection. 
+ 2025-07-30 14:37:48 Response markup is scheduled to include browser refresh script injection. 
+ 2025-07-30 14:37:48 Response markup was updated to include Browser Link script injection. 
+ 2025-07-30 14:37:48 Response markup was updated to include browser refresh script injection. 
+ 2025-07-30 14:37:48 Request finished "HTTP/2" "GET" "https"://"localhost:7010""""/swagger/index.html""" - 200 null "text/html;charset=utf-8" 83.7667ms 
+ 2025-07-30 14:37:48 Request starting "HTTP/2" "GET" "https"://"localhost:7010""""/swagger/index.js""" - null null 
+ 2025-07-30 14:37:48 No candidates found for the request path '"/swagger/index.js"' 
+ 2025-07-30 14:37:48 Request did not match any endpoints 
+ 2025-07-30 14:37:48 Request finished "HTTP/2" "GET" "https"://"localhost:7010""""/swagger/index.js""" - 200 null "application/javascript;charset=utf-8" 2.3078ms 
+ 2025-07-30 14:37:48 Request starting "HTTP/2" "GET" "https"://"localhost:7010""""/_framework/aspnetcore-browser-refresh.js""" - null null 
+ 2025-07-30 14:37:48 Request starting "HTTP/2" "GET" "https"://"localhost:7010""""/_vs/browserLink""" - null null 
+ 2025-07-30 14:37:48 Script injected: "/_framework/aspnetcore-browser-refresh.js" 
+ 2025-07-30 14:37:48 Request finished "HTTP/2" "GET" "https"://"localhost:7010""""/_framework/aspnetcore-browser-refresh.js""" - 200 16507 "application/javascript; charset=utf-8" 27.7998ms 
+ 2025-07-30 14:37:48 Request finished "HTTP/2" "GET" "https"://"localhost:7010""""/_vs/browserLink""" - 200 null "text/javascript; charset=UTF-8" 195.1107ms 
+ 2025-07-30 14:37:48 Request starting "HTTP/2" "GET" "https"://"localhost:7010""""/swagger/v1/swagger.json""" - null null 
+ 2025-07-30 14:37:48 No candidates found for the request path '"/swagger/v1/swagger.json"' 
+ 2025-07-30 14:37:48 Request did not match any endpoints 
+ 2025-07-30 14:37:48 Request finished "HTTP/2" "GET" "https"://"localhost:7010""""/swagger/v1/swagger.json""" - 200 null "application/json;charset=utf-8" 12.0795ms 
+ 2025-07-30 14:37:55 Request starting "HTTP/2" "GET" "https"://"localhost:7010""""/api/exchange-rate""?BaseCurrency=eur&TargetCurrency=usd" - null null 
+ 2025-07-30 14:37:55 1 candidate(s) found for the request path '"/api/exchange-rate"' 
+ 2025-07-30 14:37:55 Endpoint '"ExchangeApi.Controllers.ExchangeController.GetExchangeRate (ExchangeApi)"' with route pattern '"api/exchange-rate"' is valid for the request path '"/api/exchange-rate"' 
+ 2025-07-30 14:37:55 Request matched endpoint '"ExchangeApi.Controllers.ExchangeController.GetExchangeRate (ExchangeApi)"' 
+ 2025-07-30 14:37:55 Policy authentication schemes "" did not succeed 
+ 2025-07-30 14:37:55 Authorization failed. "These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user." 
+ 2025-07-30 14:37:55 AuthenticationScheme: "Bearer" was challenged. 
+ 2025-07-30 14:37:55 Request finished "HTTP/2" "GET" "https"://"localhost:7010""""/api/exchange-rate""?BaseCurrency=eur&TargetCurrency=usd" - 401 0 null 32.8281ms 
+ 2025-07-30 14:38:37 Request starting "HTTP/2" "GET" "https"://"localhost:7010""""/swagger/index.html""" - null null 
+ 2025-07-30 14:38:37 No candidates found for the request path '"/swagger/index.html"' 
+ 2025-07-30 14:38:37 Request did not match any endpoints 
+ 2025-07-30 14:38:37 Response markup is scheduled to include Browser Link script injection. 
+ 2025-07-30 14:38:37 Response markup is scheduled to include browser refresh script injection. 
+ 2025-07-30 14:38:37 Response markup was updated to include Browser Link script injection. 
+ 2025-07-30 14:38:37 Response markup was updated to include browser refresh script injection. 
+ 2025-07-30 14:38:37 Request finished "HTTP/2" "GET" "https"://"localhost:7010""""/swagger/index.html""" - 200 null "text/html;charset=utf-8" 8.6693ms 
+ 2025-07-30 14:38:37 Request starting "HTTP/2" "GET" "https"://"localhost:7010""""/swagger/index.js""" - null null 
+ 2025-07-30 14:38:37 Request starting "HTTP/2" "GET" "https"://"localhost:7010""""/_framework/aspnetcore-browser-refresh.js""" - null null 
+ 2025-07-30 14:38:37 Request starting "HTTP/2" "GET" "https"://"localhost:7010""""/_vs/browserLink""" - null null 
+ 2025-07-30 14:38:37 Script injected: "/_framework/aspnetcore-browser-refresh.js" 
+ 2025-07-30 14:38:37 Request finished "HTTP/2" "GET" "https"://"localhost:7010""""/_framework/aspnetcore-browser-refresh.js""" - 200 16507 "application/javascript; charset=utf-8" 4.6663ms 
+ 2025-07-30 14:38:37 No candidates found for the request path '"/swagger/index.js"' 
+ 2025-07-30 14:38:37 Request did not match any endpoints 
+ 2025-07-30 14:38:37 Request finished "HTTP/2" "GET" "https"://"localhost:7010""""/swagger/index.js""" - 200 null "application/javascript;charset=utf-8" 10.5978ms 
+ 2025-07-30 14:38:37 Request finished "HTTP/2" "GET" "https"://"localhost:7010""""/_vs/browserLink""" - 200 null "text/javascript; charset=UTF-8" 38.3322ms 
+ 2025-07-30 14:38:37 Request starting "HTTP/2" "GET" "https"://"localhost:7010""""/swagger/v1/swagger.json""" - null null 
+ 2025-07-30 14:38:37 No candidates found for the request path '"/swagger/v1/swagger.json"' 
+ 2025-07-30 14:38:37 Request did not match any endpoints 
+ 2025-07-30 14:38:37 Request finished "HTTP/2" "GET" "https"://"localhost:7010""""/swagger/v1/swagger.json""" - 200 null "application/json;charset=utf-8" 10.5795ms 
+ 2025-07-30 14:38:44 Request starting "HTTP/2" "GET" "https"://"localhost:7010""""/exchange-rate""?BaseCurrency=eur&TargetCurrency=usd" - null null 
+ 2025-07-30 14:38:44 1 candidate(s) found for the request path '"/exchange-rate"' 
+ 2025-07-30 14:38:44 Endpoint '"ExchangeApi.Controllers.ExchangeController.GetExchangeRate (ExchangeApi)"' with route pattern '"exchange-rate"' is valid for the request path '"/exchange-rate"' 
+ 2025-07-30 14:38:44 Request matched endpoint '"ExchangeApi.Controllers.ExchangeController.GetExchangeRate (ExchangeApi)"' 
+ 2025-07-30 14:38:44 Static files was skipped as the request already matched an endpoint. 
+ 2025-07-30 14:38:44 AuthenticationScheme: "Bearer" was not authenticated. 
+ 2025-07-30 14:38:44 Executing endpoint '"ExchangeApi.Controllers.ExchangeController.GetExchangeRate (ExchangeApi)"' 
+ 2025-07-30 14:38:44 Route matched with "{action = \"GetExchangeRate\", controller = \"Exchange\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetExchangeRate(System.String, System.String)" on controller "ExchangeApi.Controllers.ExchangeController" ("ExchangeApi"). 
+ 2025-07-30 14:38:44 Execution plan of "authorization" filters (in the following order): ["None"] 
+ 2025-07-30 14:38:44 Execution plan of "resource" filters (in the following order): ["None"] 
+ 2025-07-30 14:38:44 Execution plan of "action" filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)"] 
+ 2025-07-30 14:38:44 Execution plan of "exception" filters (in the following order): ["None"] 
+ 2025-07-30 14:38:44 Execution plan of "result" filters (in the following order): ["None"] 
+ 2025-07-30 14:38:44 Executing controller factory for controller "ExchangeApi.Controllers.ExchangeController" ("ExchangeApi") 
+ 2025-07-30 14:38:44 An 'IServiceProvider' was created for internal use by Entity Framework. 
+ 2025-07-30 14:38:44 Executed controller factory for controller "ExchangeApi.Controllers.ExchangeController" ("ExchangeApi") 
+ 2025-07-30 14:38:44 Attempting to bind parameter '"BaseCurrency"' of type '"System.String"' ... 
+ 2025-07-30 14:38:44 Attempting to bind parameter '"BaseCurrency"' of type '"System.String"' using the name '"BaseCurrency"' in request data ... 
+ 2025-07-30 14:38:44 Done attempting to bind parameter '"BaseCurrency"' of type '"System.String"'. 
+ 2025-07-30 14:38:44 Done attempting to bind parameter '"BaseCurrency"' of type '"System.String"'. 
+ 2025-07-30 14:38:44 Attempting to validate the bound parameter '"BaseCurrency"' of type '"System.String"' ... 
+ 2025-07-30 14:38:44 Done attempting to validate the bound parameter '"BaseCurrency"' of type '"System.String"'. 
+ 2025-07-30 14:38:44 Attempting to bind parameter '"TargetCurrency"' of type '"System.String"' ... 
+ 2025-07-30 14:38:44 Attempting to bind parameter '"TargetCurrency"' of type '"System.String"' using the name '"TargetCurrency"' in request data ... 
+ 2025-07-30 14:38:44 Done attempting to bind parameter '"TargetCurrency"' of type '"System.String"'. 
+ 2025-07-30 14:38:44 Done attempting to bind parameter '"TargetCurrency"' of type '"System.String"'. 
+ 2025-07-30 14:38:44 Attempting to validate the bound parameter '"TargetCurrency"' of type '"System.String"' ... 
+ 2025-07-30 14:38:44 Done attempting to validate the bound parameter '"TargetCurrency"' of type '"System.String"'. 
+ 2025-07-30 14:38:44 Start processing HTTP request "GET" "https://api.exchangerate.host/convert?access_key=1d5676c36d2508bed228dbfa2d1e5527&from=EUR&to=USD&amount=1" 
+ 2025-07-30 14:38:44 Sending HTTP request "GET" "https://api.exchangerate.host/convert?access_key=1d5676c36d2508bed228dbfa2d1e5527&from=EUR&to=USD&amount=1" 
+ 2025-07-30 14:38:45 Received HTTP response headers after 574.8258ms - 200 
+ 2025-07-30 14:38:45 End processing HTTP request after 587.6121ms - 200 
+ 2025-07-30 14:38:46 Entity Framework Core "9.0.7" initialized '"DbConnect"' using provider '"Microsoft.EntityFrameworkCore.SqlServer":"9.0.7"' with options: "EngineType=SqlServer " 
+ 2025-07-30 14:38:46 Compiling query expression: "
+"'"DbSet<CurrencyQuery>()
+    .FirstOrDefault(q => q.Base == __BaseCurrency_0 && q.Target == __TargetCurrency_1)"' 
+ 2025-07-30 14:38:46 Generated query execution expression: "
+"'"queryContext => ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync<CurrencyQuery>(
+    asyncEnumerable: SingleQueryingEnumerable.Create<CurrencyQuery>(
+        relationalQueryContext: (RelationalQueryContext)queryContext, 
+        relationalCommandResolver: parameters => [LIFTABLE Constant: RelationalCommandCache.QueryExpression(
+            Projection Mapping:
+                EmptyProjectionMember -> Dictionary<IProperty, int> { [Property: CurrencyQuery.Id (int) Required PK AfterSave:Throw ValueGenerated.OnAdd, 0], [Property: CurrencyQuery.Base (string) Required MaxLength(3), 1], [Property: CurrencyQuery.Target (string) Required MaxLength(3), 2] }
+            SELECT TOP(1) c.Id, c.Base, c.Target
+            FROM CurrencyQuery AS c
+            WHERE (c.Base == @__BaseCurrency_0) && (c.Target == @__TargetCurrency_1)) | Resolver: c => new RelationalCommandCache(
+            c.Dependencies.MemoryCache, 
+            c.RelationalDependencies.QuerySqlGeneratorFactory, 
+            c.RelationalDependencies.RelationalParameterBasedSqlProcessorFactory, 
+            Projection Mapping:
+                EmptyProjectionMember -> Dictionary<IProperty, int> { [Property: CurrencyQuery.Id (int) Required PK AfterSave:Throw ValueGenerated.OnAdd, 0], [Property: CurrencyQuery.Base (string) Required MaxLength(3), 1], [Property: CurrencyQuery.Target (string) Required MaxLength(3), 2] }
+            SELECT TOP(1) c.Id, c.Base, c.Target
+            FROM CurrencyQuery AS c
+            WHERE (c.Base == @__BaseCurrency_0) && (c.Target == @__TargetCurrency_1), 
+            False, 
+            new HashSet<string>(
+                new string[]{ }, 
+                StringComparer.Ordinal
+            )
+        )].GetRelationalCommandTemplate(parameters), 
+        readerColumns: null, 
+        shaper: (queryContext, dataReader, resultContext, resultCoordinator) => 
+        {
+            CurrencyQuery entity;
+            entity = 
+            {
+                MaterializationContext materializationContext1;
+                IEntityType entityType1;
+                CurrencyQuery instance1;
+                InternalEntityEntry entry1;
+                bool hasNullKey1;
+                materializationContext1 = new MaterializationContext(
+                    [LIFTABLE Constant: ValueBuffer | Resolver: _ => (object)ValueBuffer.Empty], 
+                    queryContext.Context
+                );
+                instance1 = default(CurrencyQuery);
+                entry1 = queryContext.TryGetEntry(
+                    key: [LIFTABLE Constant: Key: CurrencyQuery.Id PK | Resolver: c => c.Dependencies.Model.FindEntityType(\"ExchangeApi.Models.Entities.CurrencyQuery\").FindPrimaryKey()], 
+                    keyValues: new object[]{ (object)dataReader.GetInt32(0) }, 
+                    throwOnNullKey: True, 
+                    hasNullKey: hasNullKey1);
+                !(hasNullKey1) ? entry1 != default(InternalEntityEntry) ? 
+                {
+                    entityType1 = entry1.EntityType;
+                    return instance1 = (CurrencyQuery)entry1.Entity;
+                } : 
+                {
+                    ISnapshot shadowSnapshot1;
+                    shadowSnapshot1 = [LIFTABLE Constant: Snapshot | Resolver: _ => Snapshot.Empty];
+                    entityType1 = [LIFTABLE Constant: EntityType: CurrencyQuery | Resolver: namelessParameter{0} => namelessParameter{0}.Dependencies.Model.FindEntityType(\"ExchangeApi.Models.Entities.CurrencyQuery\")];
+                    instance1 = switch (entityType1)
+                    {
+                        case [LIFTABLE Constant: EntityType: CurrencyQuery | Resolver: namelessParameter{1} => namelessParameter{1}.Dependencies.Model.FindEntityType(\"ExchangeApi.Models.Entities.CurrencyQuery\")]: 
+                            {
+                                return 
+                                {
+                                    CurrencyQuery instance;
+                                    instance = new CurrencyQuery();
+                                    instance.<Id>k__BackingField = dataReader.GetInt32(0);
+                                    instance.<Base>k__BackingField = dataReader.GetString(1);
+                                    instance.<Target>k__BackingField = dataReader.GetString(2);
+                                    (instance is IInjectableService) ? ((IInjectableService)instance).Injected(
+                                        context: materializationContext1.Context, 
+                                        entity: instance, 
+                                        queryTrackingBehavior: TrackAll, 
+                                        structuralType: [LIFTABLE Constant: EntityType: CurrencyQuery | Resolver: namelessParameter{2} => namelessParameter{2}.Dependencies.Model.FindEntityType(\"ExchangeApi.Models.Entities.CurrencyQuery\")]) : default(void);
+                                    return instance;
+                                }}
+                        default: 
+                            default(CurrencyQuery)
+                    }
+                    ;
+                    entry1 = entityType1 == default(IEntityType) ? default(InternalEntityEntry) : queryContext.StartTracking(
+                        entityType: entityType1, 
+                        entity: instance1, 
+                        snapshot: shadowSnapshot1);
+                    return instance1;
+                } : default(void);
+                return instance1;
+            };
+            return entity;
+        }, 
+        contextType: ExchangeApi.Data.DbConnect, 
+        standAloneStateManager: False, 
+        detailedErrorsEnabled: False, 
+        threadSafetyChecksEnabled: True), 
+    cancellationToken: queryContext.CancellationToken)"' 
+ 2025-07-30 14:38:46 Creating DbConnection. 
+ 2025-07-30 14:38:47 Created DbConnection. (40ms). 
+ 2025-07-30 14:38:47 Opening connection to database '"ExchangeDbProd"' on server '"(localdb)\MSSQLLocalDB"'. 
+ 2025-07-30 14:38:48 Opened connection to database '"ExchangeDbProd"' on server '"(localdb)\MSSQLLocalDB"'. 
+ 2025-07-30 14:38:48 Creating DbCommand for '"ExecuteReader"'. 
+ 2025-07-30 14:38:48 Created DbCommand for '"ExecuteReader"' (4ms). 
+ 2025-07-30 14:38:48 Initialized DbCommand for '"ExecuteReader"' (19ms). 
+ 2025-07-30 14:38:48 Executing DbCommand [Parameters=["@__BaseCurrency_0='?' (Size = 3), @__TargetCurrency_1='?' (Size = 3)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [c].[Id], [c].[Base], [c].[Target]
+FROM [CurrencyQuery] AS [c]
+WHERE [c].[Base] = @__BaseCurrency_0 AND [c].[Target] = @__TargetCurrency_1" 
+ 2025-07-30 14:38:49 Executed DbCommand ("127"ms) [Parameters=["@__BaseCurrency_0='?' (Size = 3), @__TargetCurrency_1='?' (Size = 3)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [c].[Id], [c].[Base], [c].[Target]
+FROM [CurrencyQuery] AS [c]
+WHERE [c].[Base] = @__BaseCurrency_0 AND [c].[Target] = @__TargetCurrency_1" 
+ 2025-07-30 14:38:49 Closing data reader to '"ExchangeDbProd"' on server '"(localdb)\MSSQLLocalDB"'. 
+ 2025-07-30 14:38:49 A data reader for '"ExchangeDbProd"' on server '"(localdb)\MSSQLLocalDB"' is being disposed after spending 15ms reading results. 
+ 2025-07-30 14:38:49 Closing connection to database '"ExchangeDbProd"' on server '"(localdb)\MSSQLLocalDB"'. 
+ 2025-07-30 14:38:49 Closed connection to database '"ExchangeDbProd"' on server '"(localdb)\MSSQLLocalDB"' (10ms). 
+ 2025-07-30 14:38:49 '"DbConnect"' generated a temporary value for the property '"CurrencyQuery"."Id"'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values. 
+ 2025-07-30 14:38:49 Context '"DbConnect"' started tracking '"CurrencyQuery"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values. 
+ 2025-07-30 14:38:49 SaveChanges starting for '"DbConnect"'. 
+ 2025-07-30 14:38:49 DetectChanges starting for '"DbConnect"'. 
+ 2025-07-30 14:38:49 DetectChanges completed for '"DbConnect"'. 
+ 2025-07-30 14:38:49 Opening connection to database '"ExchangeDbProd"' on server '"(localdb)\MSSQLLocalDB"'. 
+ 2025-07-30 14:38:49 Opened connection to database '"ExchangeDbProd"' on server '"(localdb)\MSSQLLocalDB"'. 
+ 2025-07-30 14:38:49 Creating DbCommand for '"ExecuteReader"'. 
+ 2025-07-30 14:38:49 Created DbCommand for '"ExecuteReader"' (0ms). 
+ 2025-07-30 14:38:49 Initialized DbCommand for '"ExecuteReader"' (0ms). 
+ 2025-07-30 14:38:49 Executing DbCommand [Parameters=["@p0='?' (Size = 3), @p1='?' (Size = 3)"], CommandType='Text', CommandTimeout='30']"
+""SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [CurrencyQuery] ([Base], [Target])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1);" 
+ 2025-07-30 14:38:49 Executed DbCommand ("14"ms) [Parameters=["@p0='?' (Size = 3), @p1='?' (Size = 3)"], CommandType='Text', CommandTimeout='30']"
+""SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [CurrencyQuery] ([Base], [Target])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1);" 
+ 2025-07-30 14:38:49 The foreign key property '"CurrencyQuery"."Id"' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see property values. 
+ 2025-07-30 14:38:49 Closing data reader to '"ExchangeDbProd"' on server '"(localdb)\MSSQLLocalDB"'. 
+ 2025-07-30 14:38:49 A data reader for '"ExchangeDbProd"' on server '"(localdb)\MSSQLLocalDB"' is being disposed after spending 22ms reading results. 
+ 2025-07-30 14:38:49 Closing connection to database '"ExchangeDbProd"' on server '"(localdb)\MSSQLLocalDB"'. 
+ 2025-07-30 14:38:49 Closed connection to database '"ExchangeDbProd"' on server '"(localdb)\MSSQLLocalDB"' (0ms). 
+ 2025-07-30 14:38:49 An entity of type '"CurrencyQuery"' tracked by '"DbConnect"' changed state from 'Added' to 'Unchanged'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values. 
+ 2025-07-30 14:38:49 SaveChanges completed for '"DbConnect"' with 1 entities written to the database. 
+ 2025-07-30 14:38:49 New currency query created for "EUR" to "USD" 
+ 2025-07-30 14:38:49 '"DbConnect"' generated a temporary value for the property '"ExchangeResult"."Id"'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values. 
+ 2025-07-30 14:38:49 Context '"DbConnect"' started tracking '"ExchangeResult"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values. 
+ 2025-07-30 14:38:49 SaveChanges starting for '"DbConnect"'. 
+ 2025-07-30 14:38:49 DetectChanges starting for '"DbConnect"'. 
+ 2025-07-30 14:38:49 DetectChanges completed for '"DbConnect"'. 
+ 2025-07-30 14:38:49 Opening connection to database '"ExchangeDbProd"' on server '"(localdb)\MSSQLLocalDB"'. 
+ 2025-07-30 14:38:49 Opened connection to database '"ExchangeDbProd"' on server '"(localdb)\MSSQLLocalDB"'. 
+ 2025-07-30 14:38:49 Creating DbCommand for '"ExecuteReader"'. 
+ 2025-07-30 14:38:49 Created DbCommand for '"ExecuteReader"' (0ms). 
+ 2025-07-30 14:38:49 Initialized DbCommand for '"ExecuteReader"' (1ms). 
+ 2025-07-30 14:38:49 Executing DbCommand [Parameters=["@p0='?' (DbType = Int32), @p1='?' (Precision = 18) (Scale = 6) (DbType = Decimal), @p2='?' (DbType = DateTime2)"], CommandType='Text', CommandTimeout='30']"
+""SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [ExchangeResult] ([CurrencyQueryId], [Rate], [TimeStamp])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2);" 
+ 2025-07-30 14:38:49 Executed DbCommand ("6"ms) [Parameters=["@p0='?' (DbType = Int32), @p1='?' (Precision = 18) (Scale = 6) (DbType = Decimal), @p2='?' (DbType = DateTime2)"], CommandType='Text', CommandTimeout='30']"
+""SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [ExchangeResult] ([CurrencyQueryId], [Rate], [TimeStamp])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2);" 
+ 2025-07-30 14:38:49 The foreign key property '"ExchangeResult"."Id"' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see property values. 
+ 2025-07-30 14:38:49 Closing data reader to '"ExchangeDbProd"' on server '"(localdb)\MSSQLLocalDB"'. 
+ 2025-07-30 14:38:49 A data reader for '"ExchangeDbProd"' on server '"(localdb)\MSSQLLocalDB"' is being disposed after spending 1ms reading results. 
+ 2025-07-30 14:38:49 Closing connection to database '"ExchangeDbProd"' on server '"(localdb)\MSSQLLocalDB"'. 
+ 2025-07-30 14:38:49 Closed connection to database '"ExchangeDbProd"' on server '"(localdb)\MSSQLLocalDB"' (0ms). 
+ 2025-07-30 14:38:49 An entity of type '"ExchangeResult"' tracked by '"DbConnect"' changed state from 'Added' to 'Unchanged'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values. 
+ 2025-07-30 14:38:49 SaveChanges completed for '"DbConnect"' with 1 entities written to the database. 
+ 2025-07-30 14:38:49 Exchange rate saved for "EUR" to "USD" at 07/30/2025 12:38:49 
+ 2025-07-30 14:38:49 List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter", "Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter", "Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter", "Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"] 
+ 2025-07-30 14:38:49 No information found on request to perform content negotiation. 
+ 2025-07-30 14:38:49 Attempting to select an output formatter without using a content type as no explicit content types were specified for the response. 
+ 2025-07-30 14:38:49 Attempting to select the first formatter in the output formatters list which can write the result. 
+ 2025-07-30 14:38:49 Selected output formatter '"Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"' and content type '"application/json"' to write the response. 
+ 2025-07-30 14:38:49 Executing "OkObjectResult", writing value of type '"ExchangeApi.Models.Entities.ExchangeResult"'. 
+ 2025-07-30 14:38:49 Executed action "ExchangeApi.Controllers.ExchangeController.GetExchangeRate (ExchangeApi)" in 4901.812ms 
+ 2025-07-30 14:38:49 Executed endpoint '"ExchangeApi.Controllers.ExchangeController.GetExchangeRate (ExchangeApi)"' 
+ 2025-07-30 14:38:49 '"DbConnect"' disposed. 
+ 2025-07-30 14:38:49 Disposing connection to database '"ExchangeDbProd"' on server '"(localdb)\MSSQLLocalDB"'. 
+ 2025-07-30 14:38:49 Disposed connection to database '""' on server '""' (4ms). 
+ 2025-07-30 14:38:49 Request finished "HTTP/2" "GET" "https"://"localhost:7010""""/exchange-rate""?BaseCurrency=eur&TargetCurrency=usd" - 200 null "application/json; charset=utf-8" 4962.8036ms 
+ 2025-07-30 14:40:44 HttpMessageHandler expired after 120000ms for client '""' 
+ 2025-07-30 14:40:54 Starting HttpMessageHandler cleanup cycle with 1 items 
+ 2025-07-30 14:40:54 Ending HttpMessageHandler cleanup cycle after 0.0614ms - processed: 0 items - remaining: 1 items 
+ 2025-07-30 14:41:04 Starting HttpMessageHandler cleanup cycle with 1 items 
+ 2025-07-30 14:41:04 Ending HttpMessageHandler cleanup cycle after 0.0028ms - processed: 0 items - remaining: 1 items 
+ 2025-07-30 14:41:14 Starting HttpMessageHandler cleanup cycle with 1 items 
+ 2025-07-30 14:41:14 Ending HttpMessageHandler cleanup cycle after 0.0061ms - processed: 0 items - remaining: 1 items 
+ 2025-07-30 14:41:24 Starting HttpMessageHandler cleanup cycle with 1 items 
+ 2025-07-30 14:41:24 Ending HttpMessageHandler cleanup cycle after 0.0034ms - processed: 0 items - remaining: 1 items 
+ 2025-07-30 14:41:34 Starting HttpMessageHandler cleanup cycle with 1 items 
+ 2025-07-30 14:41:34 Ending HttpMessageHandler cleanup cycle after 0.0048ms - processed: 0 items - remaining: 1 items 
+ 2025-07-30 14:41:44 Starting HttpMessageHandler cleanup cycle with 1 items 
+ 2025-07-30 14:41:44 Ending HttpMessageHandler cleanup cycle after 0.0042ms - processed: 0 items - remaining: 1 items 
+ 2025-07-30 14:41:54 Starting HttpMessageHandler cleanup cycle with 1 items 
+ 2025-07-30 14:41:54 Ending HttpMessageHandler cleanup cycle after 0.0086ms - processed: 0 items - remaining: 1 items 
+ 2025-07-30 14:42:04 Starting HttpMessageHandler cleanup cycle with 1 items 
+ 2025-07-30 14:42:04 Ending HttpMessageHandler cleanup cycle after 0.0063ms - processed: 0 items - remaining: 1 items 
+ 2025-07-30 14:42:15 Starting HttpMessageHandler cleanup cycle with 1 items 
+ 2025-07-30 14:42:15 Ending HttpMessageHandler cleanup cycle after 0.1465ms - processed: 0 items - remaining: 1 items 
+ 2025-07-30 14:42:25 Starting HttpMessageHandler cleanup cycle with 1 items 
+ 2025-07-30 14:42:25 Ending HttpMessageHandler cleanup cycle after 0.008ms - processed: 0 items - remaining: 1 items 
+ 2025-07-30 14:42:35 Starting HttpMessageHandler cleanup cycle with 1 items 
+ 2025-07-30 14:42:35 Ending HttpMessageHandler cleanup cycle after 0.005ms - processed: 0 items - remaining: 1 items 
+ 2025-07-30 14:42:45 Starting HttpMessageHandler cleanup cycle with 1 items 
+ 2025-07-30 14:42:45 Ending HttpMessageHandler cleanup cycle after 0.0025ms - processed: 0 items - remaining: 1 items 
+ 2025-07-30 14:42:55 Starting HttpMessageHandler cleanup cycle with 1 items 
+ 2025-07-30 14:42:55 Ending HttpMessageHandler cleanup cycle after 0.0042ms - processed: 0 items - remaining: 1 items 
+ 2025-07-30 14:43:05 Starting HttpMessageHandler cleanup cycle with 1 items 
+ 2025-07-30 14:43:05 Ending HttpMessageHandler cleanup cycle after 0.0052ms - processed: 0 items - remaining: 1 items 
+ 2025-07-30 14:43:15 Starting HttpMessageHandler cleanup cycle with 1 items 
+ 2025-07-30 14:43:15 Ending HttpMessageHandler cleanup cycle after 0.0032ms - processed: 0 items - remaining: 1 items 
+ 2025-07-30 14:43:25 Starting HttpMessageHandler cleanup cycle with 1 items 
+ 2025-07-30 14:43:25 Ending HttpMessageHandler cleanup cycle after 0.0032ms - processed: 0 items - remaining: 1 items 
+ 2025-07-30 14:43:35 Starting HttpMessageHandler cleanup cycle with 1 items 
+ 2025-07-30 14:43:35 Ending HttpMessageHandler cleanup cycle after 0.0033ms - processed: 0 items - remaining: 1 items 
+ 2025-07-30 14:43:45 Starting HttpMessageHandler cleanup cycle with 1 items 
+ 2025-07-30 14:43:45 Ending HttpMessageHandler cleanup cycle after 0.0031ms - processed: 0 items - remaining: 1 items 
+ 2025-07-30 14:43:55 Starting HttpMessageHandler cleanup cycle with 1 items 
+ 2025-07-30 14:43:55 Ending HttpMessageHandler cleanup cycle after 0.0035ms - processed: 0 items - remaining: 1 items 
+ 2025-07-30 14:44:05 Starting HttpMessageHandler cleanup cycle with 1 items 
+ 2025-07-30 14:44:05 Ending HttpMessageHandler cleanup cycle after 0.0042ms - processed: 0 items - remaining: 1 items 
+ 2025-07-30 14:44:15 Starting HttpMessageHandler cleanup cycle with 1 items 
+ 2025-07-30 14:44:15 Ending HttpMessageHandler cleanup cycle after 0.0033ms - processed: 0 items - remaining: 1 items 
+ 2025-07-30 14:44:25 Starting HttpMessageHandler cleanup cycle with 1 items 
+ 2025-07-30 14:44:25 Ending HttpMessageHandler cleanup cycle after 0.0044ms - processed: 0 items - remaining: 1 items 
+ 2025-07-30 14:44:35 Starting HttpMessageHandler cleanup cycle with 1 items 
+ 2025-07-30 14:44:35 Ending HttpMessageHandler cleanup cycle after 0.0034ms - processed: 0 items - remaining: 1 items 
+ 2025-07-30 14:44:45 Starting HttpMessageHandler cleanup cycle with 1 items 
+ 2025-07-30 14:44:45 Ending HttpMessageHandler cleanup cycle after 0.0042ms - processed: 0 items - remaining: 1 items 
+ 2025-07-30 14:44:55 Starting HttpMessageHandler cleanup cycle with 1 items 
+ 2025-07-30 14:44:55 Ending HttpMessageHandler cleanup cycle after 0.0052ms - processed: 0 items - remaining: 1 items 
+ 2025-07-30 14:45:05 Starting HttpMessageHandler cleanup cycle with 1 items 
+ 2025-07-30 14:45:05 Ending HttpMessageHandler cleanup cycle after 0.004ms - processed: 0 items - remaining: 1 items 
+ 2025-07-30 14:45:15 Starting HttpMessageHandler cleanup cycle with 1 items 
+ 2025-07-30 14:45:15 Ending HttpMessageHandler cleanup cycle after 0.0043ms - processed: 0 items - remaining: 1 items 
+ 2025-07-30 14:45:25 Starting HttpMessageHandler cleanup cycle with 1 items 
+ 2025-07-30 14:45:25 Ending HttpMessageHandler cleanup cycle after 0.0045ms - processed: 0 items - remaining: 1 items 
+ 2025-07-30 14:45:35 Starting HttpMessageHandler cleanup cycle with 1 items 
+ 2025-07-30 14:45:35 Ending HttpMessageHandler cleanup cycle after 0.0054ms - processed: 0 items - remaining: 1 items 
+ 2025-07-30 14:45:45 Starting HttpMessageHandler cleanup cycle with 1 items 
+ 2025-07-30 14:45:45 Ending HttpMessageHandler cleanup cycle after 0.0038ms - processed: 0 items - remaining: 1 items 
+ 2025-07-30 14:45:51 Connection id ""0HNEFCNF7PLEM"" received FIN. 
+ 2025-07-30 14:45:51 Connection id ""0HNEFCNF7PLEM"" is closed. The last processed stream ID was 27. 
+ 2025-07-30 14:45:51 Connection id ""0HNEFCNF7PLEM"" sending FIN because: ""The Socket transport's send loop completed gracefully."" 
+ 2025-07-30 14:45:51 The connection queue processing loop for "0HNEFCNF7PLEM" completed. 
+ 2025-07-30 14:45:51 Connection id ""0HNEFCNF7PLEM"" stopped. 
+ 2025-07-30 14:45:55 Starting HttpMessageHandler cleanup cycle with 1 items 
+ 2025-07-30 14:45:55 Ending HttpMessageHandler cleanup cycle after 0.0045ms - processed: 0 items - remaining: 1 items 
+ 2025-07-30 14:46:05 Starting HttpMessageHandler cleanup cycle with 1 items 
+ 2025-07-30 14:46:05 Ending HttpMessageHandler cleanup cycle after 0.0177ms - processed: 0 items - remaining: 1 items 
+ 2025-07-30 14:46:15 Starting HttpMessageHandler cleanup cycle with 1 items 
+ 2025-07-30 14:46:15 Ending HttpMessageHandler cleanup cycle after 0.0022ms - processed: 0 items - remaining: 1 items 
+ 2025-07-30 14:46:25 Starting HttpMessageHandler cleanup cycle with 1 items 
+ 2025-07-30 14:46:25 Ending HttpMessageHandler cleanup cycle after 0.0033ms - processed: 0 items - remaining: 1 items 
+ 2025-07-30 14:46:35 Starting HttpMessageHandler cleanup cycle with 1 items 
+ 2025-07-30 14:46:35 Ending HttpMessageHandler cleanup cycle after 0.0013ms - processed: 0 items - remaining: 1 items 
+ 
